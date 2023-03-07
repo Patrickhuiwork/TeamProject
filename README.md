@@ -2,7 +2,7 @@
 Fire safety
 
 # Description:
-Gives information on how to stop fires whether it is electrical, oil, or something more hazardous as a house fire.
+Using a quiz format to teach how to stop various forms of fires.
 
 # Resources:
 
