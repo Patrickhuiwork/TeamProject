@@ -9,4 +9,5 @@ Using a quiz format to teach how to stop various forms of fires.
 # Packages/Dependencies:
 
 # Language:
-Next.js
+JS
+CSS

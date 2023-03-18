@@ -1,4 +1,35 @@
 :root {
-  
+    /*Basic Site Colors*/
+    --primary-color: #fff;
+    --secondary-color: #FF3333;
+    --tertiary-color: #282827;
+    --quaternary-color: #000000;
+
+    /*Aditional Hues
+    Green Hues*/
+    --green-hue1: #44dfa4;
+    --green-hue2: #00ECBB;
+    --green-hue3: #00C1A9;
+    /*Blue Hues*/
+    --blue-hue1: #37A6FF;
+    --blue-hue2: #00C3FF;
+    --blue-hue3: #00DBE9;
+    /*Yellow Hues*/
+    --yellow-hue1: #FFD567;
+    --yellow-hue2: #FFC353;
+    --yellow-hue3: #FFA537;
+    /*Red Hues*/
+    --red-hue1: #DA0019;
+    --red-hue2: #FF4848;
+    /*Pink Hues*/
+    --pink-hue1: #F43B6C;
+    --pink-hue2: #D10051;
+    --pink-hue3: #B8003F;
+    /*Orange Hues*/
+    --orange-hue1: #FF6C4A;
+    --orange-hue2: #FF7139;
+    --orange-hue3: #EA8200;
 }
+
+
 
