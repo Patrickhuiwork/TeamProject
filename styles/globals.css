@@ -4,6 +4,8 @@
     --secondary-color: #000000;
     --tertiary-color: #282827;
     --quaternary-color: #d9d9d9;
+    /*Nav Link hover*/
+    --nav-link: #fd9996;
 
     /*Aditional Colors for buttons
     Green Hue*/
@@ -37,12 +39,11 @@ a{
 
 /*navbar*/
 .nav {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #030303;
+    background-color: var(--secondary-color);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1;
@@ -70,7 +71,7 @@ a{
   .nav__menu-bar-line {
     width: 100%;
     height: 3px;
-    background-color: #ffffff;
+    background-color: var(--primary-color);
     transition: all 0.3s ease;
   }
   
@@ -94,7 +95,7 @@ a{
     right: 0;
     width: 150px;
     padding: 1rem;
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     z-index: 1;
   }
   
@@ -109,7 +110,7 @@ a{
   .nav__menu-list a {
     display: block;
     font-size: 1rem;
-    color: #ffffff;
+    color: var(--primary-color);
     text-decoration: none;
     transition: all 0.3s ease;
   }
@@ -119,7 +120,7 @@ a{
   }
   
   .nav__menu-list a:visited {
-    color: #ffffff;
+    color: var(--primary-color);
     text-decoration: none;
   }
   @media screen and (min-width: 768px) {
@@ -143,13 +144,13 @@ a{
   
     .nav__menu-list a {
       font-size: 1rem;
-      color: rgb(255, 255, 255);
+      color: var(--primary-color);
       text-decoration: none;
       transition: all 0.3s ease;
     }
   
     .nav__menu-list a:hover {
-      color: #fd9996;
+      color: var(--nav-link);
     }
   
     .nav__menu-bar {
