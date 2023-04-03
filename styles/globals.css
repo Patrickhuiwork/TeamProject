@@ -55,6 +55,7 @@ a{
     color: #ffffff;
     margin: 0;
     text-decoration: none;
+    max-width: 15rem;
   }
   
   .nav__menu-bar {

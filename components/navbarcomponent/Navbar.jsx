@@ -40,7 +40,7 @@ const Navbar = () => {
       <header>
           <nav className='nav'>
                 <Link href={"/"} legacyBehavior>
-
+                        
                     <img src="/logos/horizontallogov2.svg" alt="heathelp" className="logo" />
                
                 </Link>
