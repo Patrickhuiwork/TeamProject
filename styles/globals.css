@@ -1,4 +1,5 @@
 :root {
+  
     /*Basic Site Colors*/
     --primary-color: #fff;
     --secondary-color: #000000;
@@ -14,6 +15,11 @@
     --blue-hue2: #00C3FF;
     /*Red Hues*/
     --red-hue2: #FF4848;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 
