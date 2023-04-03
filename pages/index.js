@@ -13,7 +13,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <img src="/logos/stackedlogo.svg" alt="heathelp" className="logo" />
+        <Image src='/Logo/stacked logo.svg' width='550' height='400' />
+        <h2><b>"Join the fight against fire hazards with Heat Help - The ultimate fire safety app!"</b></h2>
+        <p>
+          Heat Help is the ultimate fire safety app designed to educate and equip you with the knowledge necessary to prevent fires and respond to emergencies. Wherever you go, Heat Help has got you covered.
+        </p>
+
+        <button class={styles.homeButton}>Get Started</button>
       </main>
     </>
   )
