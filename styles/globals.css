@@ -20,6 +20,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--primary-color);
 }
 
 
@@ -174,4 +175,25 @@ a{
       margin-bottom: 0;
       margin-right: 2rem;
     }
+  }
+
+
+   /*buttons*/
+  .primarybutton{
+    width: 250px;
+    background-color: var(--quaternary-color);
+    border: none;
+    color: var(--secondary-color);
+    border-radius: 5px;
+    font-family: 'Poppins Semi-Bold', sans-serif;
+    font-weight: 600;
+    font-size: 25;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .primarybutton:hover{
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    transition: 200ms;
   }
