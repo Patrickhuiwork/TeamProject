@@ -56,14 +56,7 @@ a{
     z-index: 1;
   }
   
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-    margin: 0;
-    text-decoration: none;
-    max-width: 15rem;
-  }
+  
   
   .nav__menu-bar {
     display: flex;
@@ -78,7 +71,7 @@ a{
   
   .nav__menu-bar-line {
     width: 100%;
-    height: 3px;
+    height:2px;
     background-color: var(--primary-color);
     transition: all 0.3s ease;
   }

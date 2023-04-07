@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
+import Image from 'next/image'
 import NavItem from './NavItem'
-
 const MENU_LIST = [
     {
         title: "Quizzes",
@@ -40,9 +40,7 @@ const Navbar = () => {
       <header>
           <nav className='nav'>
                 <Link href={"/"} legacyBehavior>
-                        
-                    <img src="/logos/horizontallogov2.svg" alt="heathelp" className="logo" />
-               
+                    <Image src="/Logo/horizontal logo v2.svg" width="100" height="50" alt="heathelp" className="logo" />
                 </Link>
 
               <div className="nav__menu-bar" onClick={toggleMenu}>

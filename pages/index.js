@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import Button from '@/components/Button'
 
 export default function Home() {
   return (
@@ -13,7 +14,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <img src="/logos/stackedlogo.svg" alt="heathelp" className="logo" />
+        <Image src='/Logo/stacklogo.svg' width='550' height='400' className={styles.logo}/>
+        <p className={styles.quote}>"Join the fight against fire hazards with Heat Help - The ultimate fire safety app!"</p>
+        <p className={styles.description}>
+          Heat Help is the ultimate fire safety app designed to educate and equip you with the knowledge necessary to prevent fires and respond to emergencies. Wherever you go, Heat Help has got you covered.
+        </p>
+
+        <Button>Get Started</Button>
+
+        <Button>Tutorial</Button>
       </main>
     </>
   )
