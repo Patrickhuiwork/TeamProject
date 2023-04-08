@@ -17,8 +17,8 @@ export default function Activites() {
       <main className={styles.main}>
       <p className={styles.reccommendationmessage}>We recommend having a look on our <span>Learn More</span> section before jumping into the <span>Quizzes</span></p>
       <div className={styles.container}>
-        <Squarebutton1>Learn More</Squarebutton1>
-        <Squarebutton1>Quizzes</Squarebutton1>
+        <Link href='/learning'><Squarebutton1>Learn More</Squarebutton1></Link>
+        <Link href='/Quizzes'><Squarebutton1>Quizzes</Squarebutton1></Link>
       </div>
 
       </main>

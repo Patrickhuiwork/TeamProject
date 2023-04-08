@@ -3,8 +3,8 @@
     padding: 12px 30px;
     border: none;
     border-radius: 10px;
-    color: var(--secondary-color);
-    background-color:var(--quaternary-color);
+    color: var(--primary-color);
+    background-color:var(--blue-hue2);
     cursor: pointer;
     font-size: 25px;
     font-family: 'Poppins Semi-Bold', sans-serif;
