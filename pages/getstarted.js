@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/getstarted.module.css'
 import Link from 'next/link'
+import Squarebutton1 from '@/components/Squarebutton1'
 
 export default function Activites() {
   return (
@@ -14,11 +15,12 @@ export default function Activites() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-      <Image src='/Logo/stacklogo.svg' width='550' height='400' className={styles.logo}/>
-        <p className={styles.quote}>"Join the fight against fire hazards with Heat Help - The ultimate fire safety app!"</p>
-        <p className={styles.description}>
-          Heat Help is the ultimate fire safety app designed to educate and equip you with the knowledge necessary to prevent fires and respond to emergencies. Wherever you go, Heat Help has got you covered.
-        </p>
+      <p className={styles.reccommendationmessage}>We recommend having a look on our <span>Learn More</span> section before jumping into the <span>Quizzes</span></p>
+      <div className={styles.container}>
+        <Squarebutton1>Learn More</Squarebutton1>
+        <Squarebutton1>Quizzes</Squarebutton1>
+      </div>
+
       </main>
     </>
   )

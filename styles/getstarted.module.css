@@ -5,3 +5,12 @@
     align-items: center;
   
   }
+
+.container {
+    display: flex;
+}
+
+.reccommendationmessage{
+    text-align: center;
+    width: 450px;
+}

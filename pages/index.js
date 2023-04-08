@@ -25,6 +25,7 @@ export default function Home() {
         <Link href='/getstarted'><Button>Get Started</Button></Link>
 
         <Link href='/getstarted'><Button>Tutorial</Button></Link>
+
       </main>
     </>
   )

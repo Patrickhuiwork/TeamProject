@@ -12,7 +12,8 @@
     Green Hue*/
     --green-hue1: #44dfa4;
     /*Blue Hues*/
-    --blue-hue2: #00C3FF;
+    --blue-hue1: #00C3FF;
+    --blue-hue2: #497CC9;
     /*Red Hues*/
     --red-hue2: #FF4848;
 }
@@ -42,8 +43,12 @@ p,
 li,
 a{
     font-family: 'Lato Regular', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
 }
-
+span{
+  color: var(--blue-hue2);
+}
 /*navbar*/
 .nav {
     display: flex;
