@@ -5,11 +5,11 @@ import NavItem from './NavItem'
 const MENU_LIST = [
     {
         title: "Quizzes",
-        href:"/"
+        href:"/Quizzes"
     },
     {
         title: "Learn More",
-        href:"/"
+        href:'/learning'
     },
     {
         title: "About Us",

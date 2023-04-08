@@ -5,3 +5,40 @@
     align-items: center;
   
   }
+
+.quizcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.illustration{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.description{
+    text-align: center;
+}
+
+.threeoptions{
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .illustration{
+        width: 180px;
+        height: 180px;
+    }
+    .threeoptions{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .description{
+        width: 300px;
+    }
+  }

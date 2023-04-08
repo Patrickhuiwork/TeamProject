@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Quizzes.module.css'
+import Bluebutton from '@/components/Bluebutton'
 
 export default function Login() {
   return (
@@ -13,8 +14,21 @@ export default function Login() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.quizcontainer}>
-            <Image src='/illustrations/electric fire.svg' width='200' height='200' className={styles.illustration}/>
+        <h1>Quizzes</h1>
+        <p className={styles.description}>Try one of our quizzes to asses your knowledge on different kinds of fires!</p>
+        <div className={styles.threeoptions}>
+            <div className={styles.quizcontainer}>
+                <img src='/illustrations/electric fire.svg' className={styles.illustration}/>
+                <Bluebutton>Electrical Fire</Bluebutton>
+            </div>
+            <div className={styles.quizcontainer}>
+                <img src='/illustrations/greasefire.svg' className={styles.illustration}/>
+                <Bluebutton>Grease Fire</Bluebutton>
+            </div>
+            <div className={styles.quizcontainer}>
+                <img src='/illustrations/ordinary fire.svg' className={styles.illustration}/>
+                <Bluebutton>Ordinary Fire</Bluebutton>
+            </div>
 
         </div>
 
