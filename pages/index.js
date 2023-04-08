@@ -3,8 +3,10 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Button from '@/components/Button'
+import Link from 'next/link'
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -20,9 +22,9 @@ export default function Home() {
           Heat Help is the ultimate fire safety app designed to educate and equip you with the knowledge necessary to prevent fires and respond to emergencies. Wherever you go, Heat Help has got you covered.
         </p>
 
-        <Button>Get Started</Button>
+        <Link href='/getstarted'><Button>Get Started</Button></Link>
 
-        <Button>Tutorial</Button>
+        <Link href='/getstarted'><Button>Tutorial</Button></Link>
       </main>
     </>
   )
