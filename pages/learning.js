@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '@/styles/learning.module.css'
+import Bluebutton from '@/components/Bluebutton'
+import Link from 'next/link'
+import LargeButton from '@/components/LargeButton'
 
 export default function Learning() {
   return (
@@ -13,7 +15,26 @@ export default function Learning() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <h2>Choose 1 of the folllowing type of fire below to learn more about</h2>
+        <div className={styles.threeoptions}>
+          <div className={styles.learningcontainer}>
+            <img src='/illustrations/electric fire.svg' className={styles.illustration} />
+            <Bluebutton>Electrical Fire</Bluebutton>
+          </div>
+          <div className={styles.learningcontainer}>
+            <img src='/illustrations/greasefire.svg' className={styles.illustration} />
+            <Bluebutton>Grease Fire</Bluebutton>
+          </div>
+          <div className={styles.learningcontainer}>
+            <img src='/illustrations/ordinary fire.svg' className={styles.illustration} />
+            <Bluebutton>Ordinary Fire</Bluebutton>
+          </div>
+        </div>
 
+        <div className={styles.more2LearningOptions}>
+        <Link href='/learningFireCause'><LargeButton>Learn more about the most common fire causes</LargeButton></Link>
+        <Link href='/learningInCaseOfAFire'><LargeButton>What to do in case of a fire?</LargeButton></Link>
+        </div>
       </main>
     </>
   )
