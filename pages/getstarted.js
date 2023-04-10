@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '@/styles/getstarted.module.css'
 import Link from 'next/link'
+import ReturnIcon from '@/components/returnIcon'
 import Squarebutton1 from '@/components/Squarebutton1'
 
 export default function Activites() {
@@ -14,6 +14,8 @@ export default function Activites() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
+      <Link href='/'><ReturnIcon/></Link>
       <main className={styles.main}>
       <p className={styles.reccommendationmessage}>We recommend having a look on our <span>Learn More</span> section before jumping into the <span>Quizzes</span></p>
       <div className={styles.container}>

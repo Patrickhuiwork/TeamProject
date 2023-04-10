@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/page2.module.css'
+import styles from '@/styles/about.module.css'
 
 export default function About() {
   return (
@@ -13,7 +12,31 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-          
+        <h1>About Us</h1>
+        <p className={styles.description}>Heat Help is not just an informational app but a fun and interactive quiz that will keep you engaged with adaptive knowledge questions. We are well aware of the battle for the viewers time & attention on mobile apps, our service will stand out by inciting the desire to learn and making it fun to do so. We got you.</p>
+        <h3>Our team members</h3>
+        <div className={styles.gridof4ppl}>
+          <div className={styles.eachppl}>
+            <Image src='/icons/profileIcon/ProfileIcon1.svg' width='150' height='100' />
+            <p>Patrick</p>
+          </div>
+
+          <div className={styles.eachppl}>
+            <Image src='/icons/profileIcon/ProfileIcon2.svg' width='150' height='100' />
+            <p>Jill</p>
+          </div>
+
+          <div className={styles.eachppl}>
+            <Image src='/icons/profileIcon/ProfileIcon3.svg' width='150' height='100' />
+            <p>Hudson</p>
+          </div>
+
+          <div className={styles.eachppl}>
+            <Image src='/icons/profileIcon/ProfileIcon4.svg' width='150' height='100' />
+            <p>Kai</p>
+          </div>
+        </div>
+
       </main>
     </>
   )

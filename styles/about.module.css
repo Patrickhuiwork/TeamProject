@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.description {
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+}
+
+.gridof4ppl {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.eachppl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

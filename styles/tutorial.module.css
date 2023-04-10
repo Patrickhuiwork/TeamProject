@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.description {
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+    margin: 40px 0;
+}

@@ -13,15 +13,15 @@ const MENU_LIST = [
     },
     {
         title: "About Us",
-        href:"/"
+        href:"/about"
     },
     {
         title: "Tutorial",
-        href:"/"
+        href:"/tutorial"
     },
     {
         title: "Resources",
-        href:"/"
+        href:"/resources"
     }
 ]
 
