@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './largeButton.module.css';
+import styles from './LargeButton.module.css';
 
 const largeButton = ({ children, onClick }) => {
   return (
