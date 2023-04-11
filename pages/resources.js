@@ -39,8 +39,8 @@ export default function Resources() {
           </div>
 
           <div className={styles.flex}>
-            <Image src='/imagery/fire-fighter.jpg' width='150' height='70'/>
-            <Image src='/imagery/fire-truck.jpg' width='150' height='70'/>
+            <Image src='/imagery/fire-fighter.jpg' width='150' height='90'/>
+            <Image src='/imagery/fire-truck.jpg' width='150' height='90'/>
           </div>
         </div>
       </main>

@@ -8,11 +8,19 @@
 
 .description {
     font-size: 18px;
-    width: 300px;
+    text-align: center;
 }
 
 .flex {
     display: flex;
     line-break: anywhere;
     gap: 5px;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .description {
+        width: 300px;
+        text-align: left;
+    }
 }
