@@ -14,14 +14,14 @@ export default function Quizzes() {
       </Head>
       <main className={styles.main}>
         <h1>Quizzes</h1>
-        <p className={styles.description}>Try one of our quizzes to asses your knowledge on different kinds of fires!</p>
+        <h2>Try one of our quizzes to asses your knowledge on different kinds of fires!</h2>
         <div className={styles.threeoptions}>
             <div className={styles.quizcontainer}>
                 <img src='/illustrations/electric fire.svg' className={styles.illustration}/>
                 <Bluebutton>Electrical Fire</Bluebutton>
             </div>
             <div className={styles.quizcontainer}>
-                <img src='/illustrations/greasefire.svg' className={styles.illustration}/>
+                <img src='/illustrations/grease fire.svg' className={styles.illustration}/>
                 <Bluebutton>Grease Fire</Bluebutton>
             </div>
             <div className={styles.quizcontainer}>

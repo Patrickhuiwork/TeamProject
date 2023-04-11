@@ -26,6 +26,11 @@ body {
   background-color: var(--primary-color);
 }
 
+/*Logo hover*/
+.logo:hover {
+  background-color: #fd9996;
+  cursor: pointer;
+}
 
 /*Fonts*/
 

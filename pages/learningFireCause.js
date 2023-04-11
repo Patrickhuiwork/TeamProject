@@ -50,7 +50,7 @@ export default function LearningFireCause() {
 
                 <div>
                     <h3>Do you know?</h3>
-                    <Image src='/imagery/fire-causes/top fire causes.jpg' width='300' height='400' />
+                    <Image src='/imagery/fire-causes/top fire causes.jpg' width='300' height='300' />
                 </div>
             </main>
         </>

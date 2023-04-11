@@ -15,19 +15,20 @@ export default function Learning() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h2>Choose 1 of the folllowing type of fire below to learn more about</h2>
+        <h1>Learn more</h1>
+        <h2>Choose the folllowing types of fire below to learn more about</h2>
         <div className={styles.threeoptions}>
           <div className={styles.learningcontainer}>
             <img src='/illustrations/electric fire.svg' className={styles.illustration} />
             <Link href='/learningElectric'><Bluebutton>Electrical Fire</Bluebutton></Link>
           </div>
           <div className={styles.learningcontainer}>
-            <img src='/illustrations/greasefire.svg' className={styles.illustration} />
-            <Bluebutton>Grease Fire</Bluebutton>
+            <img src='/illustrations/grease fire.svg' className={styles.illustration} />
+            <Link href='/learningGrease'><Bluebutton>Grease Fire</Bluebutton></Link>
           </div>
           <div className={styles.learningcontainer}>
             <img src='/illustrations/ordinary fire.svg' className={styles.illustration} />
-            <Bluebutton>Ordinary Fire</Bluebutton>
+            <Link href='/learningOrdinary'><Bluebutton>Ordinary Fire</Bluebutton></Link>
           </div>
         </div>
 
