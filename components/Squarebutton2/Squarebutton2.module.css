@@ -1,0 +1,33 @@
+.button {
+    margin-top: 2rem;
+    border: none;
+    border-radius: 10px;
+    color: var(--primary-color);
+    background-color:var(--red-hue2);
+    cursor: pointer;
+    font-size: 25px;
+    font-family: 'Poppins Semi-Bold', sans-serif;
+    font-weight: 600;
+    width: 180px;
+    height: 180px;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .button:hover {
+    transition: 300ms;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .button {
+      font-size: 20px;
+      width: 130px;
+      height: 130px;
+      text-align: center;
+      margin: 10px;
+    }
+  }
+  

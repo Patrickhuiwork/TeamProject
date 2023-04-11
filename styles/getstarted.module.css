@@ -8,10 +8,12 @@
 
 .container {
     display: flex;
+    align-items: center;
 }
 
 .reccommendationmessage{
-    margin-top: 10px;
+    margin: 40px 0 10px;
     text-align: center;
     width: 330px;
+    font-weight: 550;
 }
