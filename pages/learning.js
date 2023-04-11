@@ -19,7 +19,7 @@ export default function Learning() {
         <div className={styles.threeoptions}>
           <div className={styles.learningcontainer}>
             <img src='/illustrations/electric fire.svg' className={styles.illustration} />
-            <Bluebutton>Electrical Fire</Bluebutton>
+            <Link href='/learningElectric'><Bluebutton>Electrical Fire</Bluebutton></Link>
           </div>
           <div className={styles.learningcontainer}>
             <img src='/illustrations/greasefire.svg' className={styles.illustration} />
