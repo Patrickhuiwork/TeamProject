@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import styles from '@/styles/results.module.css';
 
 export default function Results() {
   const router = useRouter();
@@ -11,7 +12,7 @@ export default function Results() {
   const parsedAnswers = JSON.parse(answers);
 
   return (
-    <div>
+    <div className={styles.results}>
       <h1>Results</h1>
       <p>Your score is {score} out of {totalQuestions}!</p>
       {parsedAnswers.map((answer, index) => (

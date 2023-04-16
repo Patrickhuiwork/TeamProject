@@ -13,5 +13,11 @@
   }
 
   .illustration{
+    margin: 2rem;
     align-items: center;
+    width: 35rem;
+    height: 200px;
+    object-fit: contain;
   }
+
+  
