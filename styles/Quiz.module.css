@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .previous-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .illustration{
+    align-items: center;
+  }
