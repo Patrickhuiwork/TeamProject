@@ -6,7 +6,6 @@ import ReturnIcon from '@/components/returnIcon'
 import Bluebutton from '@/components/Bluebutton'
 import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
-import Piechart from '@/components/pieChartForGrease'
 
 
 export default function LearningGrease() {
@@ -26,7 +25,6 @@ export default function LearningGrease() {
             <h1>Learn about Grease Fire</h1>
             <img src='/illustrations/grease fire.svg' className={styles.illustration} />   
             <p className={styles.description}>A grease fire is a type of fire that occurs when cooking oil or grease reaches its ignition point and catches fire. Grease fires are common in kitchens and can be dangerous if not handled properly</p>
-            <Piechart/>
             <p className={styles.description}>The main reason for grease fires can be attributed to overheating of cooking oil or grease, which can reach its ignition point and catch fire.</p>
             <Image src='/imagery/fire-causes/cooking-fire.png' width='350' height='200'/>
             <p className={styles.description}>They can be prevented by being vigilant while cooking, using appropriate heat levels, and knowing how to properly extinguish them with a fire extinguisher or by smothering the flames. Prioritizing kitchen safety and having a plan in place to handle grease fires is essential.</p>            

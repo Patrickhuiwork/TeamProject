@@ -6,7 +6,6 @@ import ReturnIcon from '@/components/returnIcon'
 import Bluebutton from '@/components/Bluebutton'
 import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
-import Piechart from '@/components/pieChartForOrdinary'
 
 
 export default function LearningOrdinary() {
@@ -26,7 +25,6 @@ export default function LearningOrdinary() {
             <h1>Learn about Ordinary Fire</h1>
             <img src='/illustrations/ordinary fire.svg' className={styles.illustration} />   
             <p className={styles.description}>An ordinary fire refers to a standard fire that occurs when a combustible material, such as wood, paper, fabric, or other flammable substances, comes into contact with a heat source and reaches its ignition point. </p>
-            <div className={styles.chart}><Piechart/></div>
             <p className={styles.description}>Basically, ordinary fire occur from fire place and any kitchen facilities.</p>
             <Image src='/imagery/fire-causes/kid-with-fire.jpg' width='350' height='200'/>
             <p className={styles.description}>Ordinary fires can typically be extinguished using appropriate fire extinguishing methods, such as water, fire extinguishers, fire blankets, or other extinguishing agents, depending on the type of fuel and the size and location of the fire. The appropriate fire extinguishing method should be chosen based on the type of fire to avoid making the situation worse.</p>            

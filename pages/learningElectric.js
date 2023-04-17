@@ -6,7 +6,6 @@ import ReturnIcon from '@/components/returnIcon'
 import Bluebutton from '@/components/Bluebutton'
 import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
-import PieChart from '@/components/pieChartForElectric'
 
 
 export default function LearningElectric() {
@@ -26,7 +25,6 @@ export default function LearningElectric() {
             <h1>Learn about Electric Fire</h1>
             <img src='/illustrations/electric fire.svg' className={styles.illustration} />   
             <p className={styles.description}>Electric currents generate heat and when they get too hot it can loosen the connection causing a arc of electricity which can catch fires.</p>
-            <div className={styles.chart}><PieChart/></div>
             <p className={styles.description}>Basically, electrical fires originate from high-voltage power lines or electrical appliances, and these two are the main causes of most fires.</p>
             <Image src='/imagery/fire-causes/electrical-fire.jpg' width='350' height='200'/>
             <p className={styles.description}>Water is not good for putting out electrical fires as it conducts electricity and can cause electrocution or spread the fire.</p>            
