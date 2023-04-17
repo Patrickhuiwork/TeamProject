@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
   }
   
   .previous-button {
@@ -21,8 +20,17 @@
   }
 
   .question{
-    width: 500px;
     text-align: center;
   }
+
+  @media only screen and (max-width: 768px) {
+    .question {
+        width: 300px;
+    }
+
+    .illustration{
+      width: 300px;
+    }
+}
 
   

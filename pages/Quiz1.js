@@ -8,8 +8,8 @@ const questions = [
   {
     id: 1, 
     question: 'Which of the following is the most common cause of electric fires?', 
-    questionoptions: 'A: Faulty wiring',
-    questionoptions: 'B: Poor ventilation', 
+    questionoptionsA: 'A: Faulty wiring',
+    questionoptionsB: 'B: Poor ventilation', 
     options: ['A', 'B'], 
     imageSrc: '/illustrations/badventilation.svg', 
     answer: 'A', 
@@ -19,8 +19,8 @@ const questions = [
   {
     id: 2, 
     question: 'What is the best way to stop an electrical fire?' , 
-    questionoptions: 'A: Use water to put out the flames',
-    questionoptions: 'B: Turn off the power source and use a fire extinguisher', 
+    questionoptionsA: 'A: Use water to put out the flames',
+    questionoptionsB: 'B: Turn off the power source and use a fire extinguisher', 
     options: ['A', 'B'], 
     imageSrc: '/illustrations/fire extinguisher.svg', 
     answer: 'B', 
@@ -29,8 +29,8 @@ const questions = [
   {
     id: 3, 
     question: 'How can you prevent electrical fires in your home?', 
-    questionoptions: 'A: Use extension cords as a permanent solution instead of fixed wiring',
-    questionoptions: 'B: Keep flammable materials away from outlets and cords',  
+    questionoptionsA: 'A: Use extension cords as a permanent solution instead of fixed wiring',
+    questionoptionsB: 'B: Keep flammable materials away from outlets and cords',  
     options: ['A', 'B'], 
     imageSrc: '/illustrations/outlet.svg', 
     answer: 'B', 
@@ -70,7 +70,7 @@ export default function Quiz() {
     }
   };
 
-  const { question, options, imageSrc, questionoptions } = questions[currentQuestion];
+  const { question, options, imageSrc, questionoptionsA, questionoptionsB} = questions[currentQuestion];
 
   return (
     <div className={styles.main}>
@@ -79,8 +79,8 @@ export default function Quiz() {
       )}
       <h1>Electrical Fires</h1>
       <p className={styles.question}>{question}</p>
-      <p className={styles.questionoptions}>{questionoptions}</p>
-      <p className={styles.questionoptions}>{questionoptions}</p>
+      <p className={styles.questionoptions}>{questionoptionsA}</p>
+      <p className={styles.questionoptions}>{questionoptionsB}</p>
       <QuizButton onClick={() => handleAnswer(options[0])}>{options[0]}</QuizButton>
       <QuizButton onClick={() => handleAnswer(options[1])}>{options[1]}</QuizButton>
       <img className={styles.illustration}  src={imageSrc} /> 
