@@ -19,8 +19,19 @@
     object-fit: contain;
   }
 
+  .questionArea {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0;
+    gap: 20px;
+  }
+
   .question{
     text-align: center;
+    font-weight: 600;
   }
 
   @media only screen and (max-width: 768px) {
@@ -31,6 +42,11 @@
     .illustration{
       width: 300px;
     }
+
+    .questionArea {
+      width: 300px;
+    }
+
 }
 
   
