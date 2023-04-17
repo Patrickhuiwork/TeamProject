@@ -32,7 +32,7 @@ export default function LearningOrdinary() {
 
             <div className={styles.buttons}>
                 <Redbutton>Take the quiz</Redbutton>
-                <Link href='/learningGrease'><Bluebutton>Start again from Grease Fire ⮞</Bluebutton></Link>
+                <Link href='/learningElectric'><Bluebutton>Start again from Electrical Fires ⮞</Bluebutton></Link>
                 
             </div>
             

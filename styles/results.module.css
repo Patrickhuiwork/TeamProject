@@ -2,3 +2,28 @@
     text-align: center;
     margin: 2rem;
 }
+
+.incorrect{
+    color: var(--red-hue2);
+}
+
+.correct{
+    color: var(--blue-hue2);
+}
+
+
+.resultscontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question{
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+.score{
+    font-size: 30px;
+}

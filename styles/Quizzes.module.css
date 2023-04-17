@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
   
   }
 
@@ -12,12 +13,14 @@
     align-items: center;
     margin: 1rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .illustration{
     width: 250px;
     height: 250px;
     object-fit: contain;
+    text-decoration: none;
 }
 
 .description{

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import Button from '../components/Button';
+import QuizButton from '../components/QuizButton';
 import styles from '@/styles/Quiz.module.css';
 import { Main } from 'next/document';
 
@@ -75,18 +75,21 @@ export default function Quiz() {
   return (
     <div className={styles.main}>
       {currentQuestion > 0 && (
-        <Button onClick={handlePreviousQuestion}>Previous Question</Button>
+        <QuizButton onClick={handlePreviousQuestion}>Previous Question</QuizButton>
       )}
       <h1>Electrical Fires</h1>
       <p className={styles.question}>{question}</p>
       <p className={styles.questionoptions}>{questionoptions}</p>
       <p className={styles.questionoptions}>{questionoptions}</p>
-      <Button onClick={() => handleAnswer(options[0])}>{options[0]}</Button>
-      <Button onClick={() => handleAnswer(options[1])}>{options[1]}</Button>
+      <QuizButton onClick={() => handleAnswer(options[0])}>{options[0]}</QuizButton>
+      <QuizButton onClick={() => handleAnswer(options[1])}>{options[1]}</QuizButton>
       <img className={styles.illustration}  src={imageSrc} /> 
       {currentQuestion === questions.length - 1 && (
         <Link href={`/results1?score=${score}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>
-          See Results
+          <QuizButton>
+
+          See Results ⮞
+          </QuizButton>
         </Link>
       )}
     </div>

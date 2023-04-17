@@ -20,4 +20,9 @@
     object-fit: contain;
   }
 
+  .question{
+    width: 500px;
+    text-align: center;
+  }
+
   
