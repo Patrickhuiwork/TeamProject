@@ -6,7 +6,7 @@ import ReturnIcon from '@/components/returnIcon'
 import Bluebutton from '@/components/Bluebutton'
 import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
-import Piechart from '@/components/PieChartForOrdinary'
+import Piechart from '@/components/pieChartForOrdinary'
 
 
 export default function LearningOrdinary() {
