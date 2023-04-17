@@ -52,6 +52,7 @@ export default function LearningFireCause() {
                     <h3>Do you know?</h3>
                     <Image src='/imagery/fire-causes/top fire causes.jpg' width='300' height='300' style={{borderRadius: 15}} />
                 </div>
+
             </main>
         </>
     )

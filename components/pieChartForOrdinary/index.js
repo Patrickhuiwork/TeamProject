@@ -11,7 +11,7 @@ ChartJS.register(
     Tooltip,
     Legend);
 
-export default function AreaChart() {
+export default function PieChart() {
 
     const [chartData,setChartData] = useState({
         datasets: []
