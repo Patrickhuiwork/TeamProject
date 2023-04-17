@@ -14,7 +14,7 @@ export default function Resources() {
       <main className={styles.main}>
         <h1>Resources</h1>
         <h3>Vancouver fire and rescue services map</h3>
-        <Image src='/imagery/service-map.png' width='350' height='230' />
+        <Image src='/imagery/service-map.png' width='350' height='230' style={{borderRadius: 20}}/>
         <h3>Fire emergency: 911</h3>
         <div className={styles.description}>
           <div>
@@ -39,8 +39,8 @@ export default function Resources() {
           </div>
 
           <div className={styles.flex}>
-            <Image src='/imagery/fire-fighter.jpg' width='150' height='90'/>
-            <Image src='/imagery/fire-truck.jpg' width='150' height='90'/>
+            <Image src='/imagery/fire-fighter.jpg' width='150' height='90' style={{borderRadius: 10}}/>
+            <Image src='/imagery/fire-truck.jpg' width='150' height='90' style={{borderRadius: 10}}/>
           </div>
         </div>
       </main>

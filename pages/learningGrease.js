@@ -26,7 +26,7 @@ export default function LearningGrease() {
         <img src='/illustrations/grease fire.svg' className={styles.illustration} />
         <p className={styles.description}>A grease fire is a type of fire that occurs when cooking oil or grease reaches its ignition point and catches fire. Grease fires are common in kitchens and can be dangerous if not handled properly</p>
         <p className={styles.description}>The main reason for grease fires can be attributed to overheating of cooking oil or grease, which can reach its ignition point and catch fire.</p>
-        <Image src='/imagery/fire-causes/cooking-fire.png' width='350' height='200' />
+        <Image src='/imagery/fire-causes/cooking-fire.png' width='350' height='200' style={{borderRadius: 15}} />
         <p className={styles.description}>They can be prevented by being vigilant while cooking, using appropriate heat levels, and knowing how to properly extinguish them with a fire extinguisher or by smothering the flames. Prioritizing kitchen safety and having a plan in place to handle grease fires is essential.</p>
         <p className={styles.description2}>To prevent grease fires, it's important to always keep an eye on cooking oil or grease when it's heated and never leave it unattended. Adjusting the heat to the appropriate level and using a thermometer to monitor the oil's temperature can also help prevent overheating. Keeping a fire extinguisher and a lid nearby when cooking with oil or grease is also a good safety precaution.</p>
 
