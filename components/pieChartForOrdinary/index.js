@@ -1,5 +1,5 @@
-import { useState,useEffect } from "react";
-import styles from './pieChartForOrdinary.module.css';
+import { useState, useEffect, React } from "react";
+import styles from './PieChartForOrdinary.module.css';
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, 
     ArcElement, 
