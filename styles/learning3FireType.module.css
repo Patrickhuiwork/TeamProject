@@ -41,6 +41,10 @@
     justify-content: space-between;
 }
 
+.chart{
+    margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
     .buttons {
         width: 340px;
