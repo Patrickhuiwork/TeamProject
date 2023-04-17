@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 
@@ -44,4 +43,7 @@
         width: 300px;
     }
 
+    .h2 {
+        width: 300px;
+    }
   }
