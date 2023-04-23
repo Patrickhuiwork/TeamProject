@@ -5,12 +5,6 @@
     justify-content: center;
     height: 100vh;
   }
-  
-  .previous-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
 
   .illustration{
     margin: 2rem;
@@ -25,4 +19,6 @@
     text-align: center;
   }
 
-  
+  .options{
+    display: flex;
+  }

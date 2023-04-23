@@ -3,6 +3,7 @@ import Link from 'next/link';
 import QuizButton from '../components/QuizButton';
 import styles from '@/styles/Quiz.module.css';
 import { Main } from 'next/document';
+import Buttonv2 from '@/components/Buttonv2';
 
 const questions = [
   {
@@ -42,56 +43,64 @@ export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [answers, setAnswers] = useState([]);
+  const [selectedAnswer, setSelectedAnswer] = useState('');
 
   const handleAnswer = (answer) => {
+    setSelectedAnswer(answer);
     const isCorrect = answer === questions[currentQuestion].answer;
     const answerObject = {
       question: questions[currentQuestion].question,
-      answer,
+      answer: answer,
       isCorrect,
       explanation: isCorrect ? questions[currentQuestion].explanation : questions[currentQuestion].inccorectexplanation,
     };
     const newAnswers = [...answers];
     newAnswers[currentQuestion] = answerObject;
     setAnswers(newAnswers);
-    if (isCorrect) {
+    if (isCorrect && score < 3) {
       setScore(score + 1);
     }
+  };
+
+  const handleNextQuestion = () => {
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
+      setSelectedAnswer('');
     }
   };
 
-  const handlePreviousQuestion = () => {
-    const previousQuestion = currentQuestion - 1;
-    if (previousQuestion >= 0) {
-      setCurrentQuestion(previousQuestion);
-    }
-  };
 
-  const { question, options, imageSrc, questionoptions } = questions[currentQuestion];
+  const { question, options, imageSrc, questionoptions, questionoptions1 } = questions[currentQuestion];
 
   return (
     <div className={styles.main}>
-      {currentQuestion > 0 && (
-        <QuizButton onClick={handlePreviousQuestion}>Previous Question</QuizButton>
-      )}
       <h1>Electrical Fires</h1>
-      <p className={styles.question}>{question}</p>
-      <p className={styles.questionoptions}>{questionoptions}</p>
-      <p className={styles.questionoptions}>{questionoptions}</p>
-      <QuizButton onClick={() => handleAnswer(options[0])}>{options[0]}</QuizButton>
-      <QuizButton onClick={() => handleAnswer(options[1])}>{options[1]}</QuizButton>
-      <img className={styles.illustration}  src={imageSrc} /> 
-      {currentQuestion === questions.length - 1 && (
-        <Link href={`/results1?score=${score}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>
-          <QuizButton>
+      <div className={styles.question}>
 
-          See Results ⮞
-          </QuizButton>
+        <p>{question}</p>
+        <p>{questionoptions}</p>
+        <p>{questionoptions1}</p>
+      </div>
+      <div className={styles.options}>
+      <Buttonv2 onClick={() => handleAnswer(options[0])} disabled={selectedAnswer !== ''}>Select {options[0]}</Buttonv2>
+      <Buttonv2 onClick={() => handleAnswer(options[1])} disabled={selectedAnswer !== ''}>Select {options[1]}</Buttonv2>
+      </div>
+      {selectedAnswer !== '' && (
+         <div>
+         <p>You have selected option: {selectedAnswer}</p>
+         {currentQuestion !== 2 && <QuizButton onClick={handleNextQuestion}>Next Question</QuizButton>}
+       </div>
+      )}
+      {currentQuestion === questions.length - 1 && selectedAnswer === '' && (
+        <p>Please select an answer before proceeding to the next question.</p>
+      )}
+      {((currentQuestion === questions.length - 1 && selectedAnswer !== '') || score === 3) && (
+        <Link href={`/results1?score=${score}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>
+          <QuizButton>See Results ⮞</QuizButton>
         </Link>
       )}
+      <img src={imageSrc} className={styles.illustration}/>
     </div>
   );
 }
