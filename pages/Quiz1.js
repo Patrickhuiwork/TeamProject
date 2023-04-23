@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Main } from 'next/document';
 import Buttonv2 from '../components/Buttonv2';
 import QuizButton from '../components/QuizButton';
+import styles from '@/styles/Quiz.module.css'
 
 
 const questions = [
@@ -74,20 +75,25 @@ export default function Quiz() {
   const { question, options, imageSrc, questionoptions, questionoptions1 } = questions[currentQuestion];
 
   return (
-    <div>
+    <div className={styles.main}>
       <h1>Electrical Fires</h1>
-      <p>{question}</p>
-      <p>{questionoptions}</p>
-      <p>{questionoptions1}</p>
-      <Buttonv2 onClick={() => handleAnswer(options[0])} disabled={selectedAnswer !== ''}>Select {options[0]}</Buttonv2>
-      <Buttonv2 onClick={() => handleAnswer(options[1])} disabled={selectedAnswer !== ''}>Select {options[1]}</Buttonv2>
+      <div className={styles.question}>
+        <p>{question}</p>
+        <p>{questionoptions}</p>
+        <p>{questionoptions1}</p>
+
+      </div>
+      <div>
+        <Buttonv2 onClick={() => handleAnswer(options[0])} disabled={selectedAnswer !== ''}>Select {options[0]}</Buttonv2>
+        <Buttonv2 onClick={() => handleAnswer(options[1])} disabled={selectedAnswer !== ''}>Select {options[1]}</Buttonv2>
+
+      </div>
       {selectedAnswer !== '' && (
          <div>
          <p>You have selected option: {selectedAnswer}</p>
         {currentQuestion !== 2 && <QuizButton onClick={handleNextQuestion}>Next Question</QuizButton>}
        </div>
       )}
-      <img src={imageSrc} />
       {currentQuestion === questions.length - 1 && selectedAnswer === '' && (
         <p>Please select an answer before proceeding to the next question.</p>
       )}
@@ -96,6 +102,7 @@ export default function Quiz() {
           <QuizButton>See Results ⮞</QuizButton>
         </Link>
       )}
+      <img className={styles.illustration} src={imageSrc} />
     </div>
   );
 }
