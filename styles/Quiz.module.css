@@ -1,24 +1,81 @@
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-
   .illustration{
-    margin: 2rem;
+    margin-top: 5rem;
     align-items: center;
-    width: 35rem;
-    height: 200px;
+    width: 25rem;
+    height: 25rem;
     object-fit: contain;
   }
 
-  .question{
+  .container{
     width: 500px;
     text-align: center;
+    align-items: center;
+  }
+
+  .question{
+    text-align: center;
+    font-size: 30px
+  }
+
+  .questionoptions{
+    font-size: 25px
+  }
+
+  .selection{
+    width: 500px;
+    font-size: 25px
+  }
+
+  .buttons{
+    margin-top: 2rem;
+
   }
 
   .options{
+    width: 500px;
+  }
+
+  .questioncontainer{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .illustration{
+      margin-top: 2rem;
+      align-items: center;
+      width: 15rem;
+      height: 15rem;
+    }
+    .container{
+      width: 300px;
+    }
+
+    .selection{
+      width: 300px;
+      font-size: 20px;
+    }
+
+    .options{
+      width: 300px;
+    }
+
+    .question{
+      text-align: center;
+      font-size: 25px
+    }
+
+    .questionoptions{
+      font-size: 20px
+    }
   }

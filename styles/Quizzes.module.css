@@ -4,16 +4,17 @@
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-  
+    margin-bottom: 3rem;
   }
 
 .quizcontainer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
     cursor: pointer;
     text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .illustration{
@@ -21,6 +22,7 @@
     height: 250px;
     object-fit: contain;
     text-decoration: none;
+    margin-top: 1rem;
 }
 
 .description{
@@ -33,8 +35,8 @@
 
 @media only screen and (max-width: 768px) {
     .illustration{
-        width: 180px;
-        height: 180px;
+        width: 100px;
+        height: 120px;
     }
     .threeoptions{
         display: flex;
@@ -43,5 +45,12 @@
     }
     .description{
         width: 300px;
+    }
+    .quizcontainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            text-decoration: none;
     }
   }

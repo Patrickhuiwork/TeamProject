@@ -50,38 +50,42 @@ export default function Quiz() {
 
   return (
     <div className={styles.main}>
+
       <div className={styles.questioncontainer}>
         
-      </div>
-      <h1>Electrical Fires</h1>
-      <div className={styles.question}>
-        <p>{question}</p>
-        <p>{questionoptions}</p>
-        <p>{questionoptions1}</p>
+        <h1>Electrical Fires</h1>
+        <div className={styles.container}>
+          <p className={styles.question}>{question}</p>
+          <div className={styles.options}>
+            <p className={styles.questionoptions}>{questionoptions}</p>
+            <p className={styles.questionoptions}>{questionoptions1}</p>
 
-      </div>
-      <div>
-        <Buttonv2 onClick={() => handleAnswer(options[0])} disabled={selectedAnswer !== ''}>Select {options[0]}</Buttonv2>
-        <Buttonv2 onClick={() => handleAnswer(options[1])} disabled={selectedAnswer !== ''}>Select {options[1]}</Buttonv2>
+          </div>
 
-      </div>
-      {selectedAnswer !== '' && (
-         <div>
-         <p>You have selected option: {selectedAnswer}</p>
-        {currentQuestion !== 2 && <QuizButton onClick={handleNextQuestion}>Next Question</QuizButton>}
-       </div>
-      )}
-      {currentQuestion === questions.length - 1 && selectedAnswer === '' && (
-        <p>Please select an answer before proceeding to the next question.</p>
-      )}
-      {currentQuestion === questions.length - 1 && selectedAnswer !== '' && (
-        <div>
-          <Link href={`/results1?score=${calculateScore()}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>
-            <QuizButton>See Results </QuizButton>
-          </Link>
         </div>
-      )}
-      <img className={styles.illustration} src={imageSrc} />
+        <div className={styles.buttons}>
+          <Buttonv2 onClick={() => handleAnswer(options[0])} disabled={selectedAnswer !== ''}>Select {options[0]}</Buttonv2>
+          <Buttonv2 onClick={() => handleAnswer(options[1])} disabled={selectedAnswer !== ''}>Select {options[1]}</Buttonv2>
+
+        </div>
+        {selectedAnswer !== '' && (
+          <div>
+          <p className={styles.selection}>You have selected option: {selectedAnswer}</p>
+          {currentQuestion !== 2 && <QuizButton onClick={handleNextQuestion}>Next Question</QuizButton>}
+        </div>
+        )}
+        {currentQuestion === questions.length - 1 && selectedAnswer === '' && (
+          <p className={styles.selection}>Please select an answer before proceeding to the next question.</p>
+        )}
+        {currentQuestion === questions.length - 1 && selectedAnswer !== '' && (
+          <div>
+            <Link href={`/results1?score=${calculateScore()}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>
+              <QuizButton>See Results </QuizButton>
+            </Link>
+          </div>
+        )}
+        <img className={styles.illustration} src={imageSrc} />
+      </div>
     </div>
   );
 }

@@ -14,10 +14,12 @@
     Green Hue*/
   --green-hue1: #44dfa4;
   /*Blue Hues*/
-  --blue-hue1: #00abdf;
+  --blue-hue1: #007bff;
   --blue-hue2: #497CC9;
+  --blue-hue3: #003e80;
   /*Red Hues*/
   --red-hue2: #FF4848;
+  --red-hue3: #c92222;
 }
 
 body {
@@ -28,7 +30,6 @@ body {
 
 /*Logo hover*/
 .logo:hover {
-  background-color: #fd9996;
   cursor: pointer;
 }
 
@@ -49,19 +50,16 @@ h6 {
 h1 {
   font-weight: 750;
   font-size: 40px;
-  margin-top: 50px;
 }
 
 h2 {
   font-weight: 750;
   font-size: 25px;
-  margin-top: 40px;
 }
 
 h3 {
   font-weight: 550;
   font-size: 24px;
-  margin-top: 40px;
 }
 
 h4 {

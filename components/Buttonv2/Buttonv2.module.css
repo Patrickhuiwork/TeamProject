@@ -1,17 +1,18 @@
 .button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+  font-family: 'Poppins Semi-Bold', sans-serif;
+    font-size: 20px;
     font-weight: 500;
-    color: #fff;
-    background-color: #007bff;
+    color: var(--primary-color);
+    background-color: var( --blue-hue1);
     border: none;
     border-radius: 5px;
-    padding: 12px 20px;
+    padding: 12px 30px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 300ms ease-in-out;
+    margin-left: .5rem;
+    margin-right: .5rem;
   }
   
   .active {
-    background-color: #0056b3;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var( --blue-hue3);
   }

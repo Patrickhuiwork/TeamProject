@@ -2,8 +2,8 @@
     margin: 1rem;
     border: none;
     border-radius: 4px;
-    color: var(--secondary-color);
-    background-color:red;
+    color: var(--primary-color);
+    background-color: var(--red-hue2);
     cursor: pointer;
     font-size: 25px;
     font-family: 'Poppins Semi-Bold', sans-serif;
@@ -14,7 +14,7 @@
   
   .button:hover {
     transition: 300ms;
-    background-color: var(--tertiary-color);
+    background-color: var(--red-hue3);
     color: var(--primary-color);
   }
 

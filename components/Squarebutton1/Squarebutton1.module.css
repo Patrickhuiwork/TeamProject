@@ -17,7 +17,7 @@
   
   .button:hover {
     transition: 300ms;
-    background-color: var(--tertiary-color);
+    background-color: var(--blue-hue3);
     color: var(--primary-color);
   }
 
