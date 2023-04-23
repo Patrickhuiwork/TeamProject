@@ -18,18 +18,18 @@ export default function LearningInCaseOfAFire() {
                 <h3>What to do in case of a fire?</h3>
                 <div className={styles.flex}>
                     <div>
-                        <Image src='/imagery/in-case-of-a-fire/fire exit.jpg' width='150' height='100' style={{borderRadius: 10}} />
+                        <Image src='/imagery/in-case-of-a-fire/fire exit.jpg' width='150' height='100' />
                         <p>Find the nearest EXIT</p>
                     </div>
 
                     <div>
-                        <Image src='/imagery/in-case-of-a-fire/use exit.jpg' width='150' height='200' style={{borderRadius: 10}}/>
+                        <Image src='/imagery/in-case-of-a-fire/use exit.jpg' width='150' height='200' />
                         <p>Use Stairs in stead of Lift</p>
                     </div>
                 </div>
 
                 <div>
-                    <Image src='/imagery/in-case-of-a-fire/fire action.jpg' width='320' height='350'/>
+                    <Image src='/imagery/in-case-of-a-fire/fire action.jpg' width='320' height='350' />
                     <p>Use Stairs in stead of Lift</p>
                 </div>
             </main>

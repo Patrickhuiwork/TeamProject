@@ -4,30 +4,21 @@ import Image from 'next/image'
 import NavItem from './NavItem'
 const MENU_LIST = [
     {
-        title: "Home",
-        href:'/'
-    },
-
-    {
         title: "Quizzes",
         href:"/Quizzes"
     },
-
     {
         title: "Learn More",
         href:'/learning'
     },
-
     {
         title: "About Us",
         href:"/about"
     },
-
     {
         title: "Tutorial",
         href:"/tutorial"
     },
-
     {
         title: "Resources",
         href:"/resources"
