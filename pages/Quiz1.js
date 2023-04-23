@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import { Main } from 'next/document';
 import Buttonv2 from '../components/Buttonv2';
 import QuizButton from '../components/QuizButton';
 import styles from '@/styles/Quiz.module.css'
@@ -26,15 +25,6 @@ export default function Quiz() {
       const newAnswers = [...answers];
       newAnswers[currentQuestion] = answerObject;
       setAnswers(newAnswers);
-      if (isCorrect) {
-        if (score < 3) {
-          setScore(score + 1);
-        }
-      } else {
-        if (score > 0) {
-          setScore(score - 1);
-        }
-      }
     }
   };
 
@@ -46,11 +36,23 @@ export default function Quiz() {
     }
   };
 
+  const calculateScore = () => {
+    let correctAnswers = 0;
+    answers.forEach((answer) => {
+      if (answer && answer.isCorrect) {
+        correctAnswers++;
+      }
+    });
+    return correctAnswers;
+  };
 
   const { question, options, imageSrc, questionoptions, questionoptions1 } = questions[currentQuestion];
 
   return (
     <div className={styles.main}>
+      <div className={styles.questioncontainer}>
+        
+      </div>
       <h1>Electrical Fires</h1>
       <div className={styles.question}>
         <p>{question}</p>
@@ -73,9 +75,11 @@ export default function Quiz() {
         <p>Please select an answer before proceeding to the next question.</p>
       )}
       {currentQuestion === questions.length - 1 && selectedAnswer !== '' && (
-        <Link href={`/results1?score=${score}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>
-          <QuizButton>See Results </QuizButton>
-        </Link>
+        <div>
+          <Link href={`/results1?score=${calculateScore()}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>
+            <QuizButton>See Results </QuizButton>
+          </Link>
+        </div>
       )}
       <img className={styles.illustration} src={imageSrc} />
     </div>
