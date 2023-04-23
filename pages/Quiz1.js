@@ -74,9 +74,6 @@ export default function Quiz() {
           {currentQuestion !== 2 && <QuizButton onClick={handleNextQuestion}>Next Question</QuizButton>}
         </div>
         )}
-        {currentQuestion === questions.length - 1 && selectedAnswer === '' && (
-          <p className={styles.selection}>Please select an answer before proceeding to the next question.</p>
-        )}
         {currentQuestion === questions.length - 1 && selectedAnswer !== '' && (
           <div>
             <Link href={`/results1?score=${calculateScore()}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>

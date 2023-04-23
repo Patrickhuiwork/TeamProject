@@ -15,8 +15,9 @@ export default function Activites() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       <main className={styles.main}>
+        <h1>Home</h1>
         <p className={styles.reccommendationmessage}>We recommend having a look on our <span>Learn More</span> section before jumping into the <span>Quizzes</span></p>
         <div className={styles.container}>
           <Link href='/learning'><Squarebutton1>Learn More</Squarebutton1></Link>

@@ -4,6 +4,10 @@ import Image from 'next/image'
 import NavItem from './NavItem'
 const MENU_LIST = [
     {
+        title: "Home",
+        href:"/getstarted"
+    },
+    {
         title: "Quizzes",
         href:"/Quizzes"
     },
@@ -39,8 +43,8 @@ const Navbar = () => {
   return (
       <header>
           <nav className='nav'>
-                <Link href={"/"} legacyBehavior>
-                    <Image src="/Logo/horizontal logo v2.svg" width="100" height="50" alt="heathelp" className="logo" />
+                <Link href={"/getstarted"} legacyBehavior>
+                    <Image src="/Logo/horizontal logo v2.svg" width="200" height="50" alt="heathelp" className="logo" />
                 </Link>
 
               <div className="nav__menu-bar" onClick={toggleMenu}>

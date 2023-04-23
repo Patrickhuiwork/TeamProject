@@ -3,6 +3,14 @@
     margin: 2rem;
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
 .incorrect{
     color: var(--red-hue2);
 }
@@ -17,6 +25,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 500px;
 }
 
 .question{
@@ -25,5 +34,21 @@
 }
 
 .score{
-    font-size: 30px;
+    font-size: 25px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .score{
+        font-size: 20px;
+    }
+
+    .resultscontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
+    }
+
+  }

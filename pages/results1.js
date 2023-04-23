@@ -15,31 +15,34 @@ export default function Results() {
   const parsedAnswers = JSON.parse(answers);
 
   return (
-    <div className={styles.results}>
-      <h1>Results</h1>
-      <p className={styles.score}>Your score is {score} out of {totalQuestions}!</p>
+    <div className={styles.main}>
       <div className={styles.resultscontainer}>
-       {parsedAnswers.map((answer, index) => (
-          <div key={index}>
-            <p className={styles.question}>{answer.question}</p>
-            <p>Your answer: {answer.answer}</p>
-            {answer.isCorrect ? (
-              <p className={styles.correct}>Correct! {answer.explanation}</p>
-            ) : (
-              <p className={styles.incorrect}>Incorrect! {answer.explanation}</p>
-            )}
-          </div>
-        ))}`
-        
-      </div>
 
-      <Link href='/learning'>
-        <Button>Learn More</Button>
-      </Link>
-      
-      <Link href='/Quizzes'>
-        <Redbutton>Take Another Quiz</Redbutton>
-      </Link>
+        <h1>Results</h1>
+        <p className={styles.score}>Your score is {score} out of {totalQuestions}!</p>
+        <div className={styles.resultscontainer}>
+        {parsedAnswers.map((answer, index) => (
+            <div key={index}>
+              <p className={styles.question}>{answer.question}</p>
+              <p>Your answer: {answer.answer}</p>
+              {answer.isCorrect ? (
+                <p className={styles.correct}>Correct! {answer.explanation}</p>
+              ) : (
+                <p className={styles.incorrect}>Incorrect! {answer.explanation}</p>
+              )}
+            </div>
+          ))}`
+          
+        </div>
+
+        <Link href='/learning'>
+          <Button>Learn More</Button>
+        </Link>
+        
+        <Link href='/Quizzes'>
+          <Redbutton>Take Another Quiz</Redbutton>
+        </Link>
+      </div>
     </div>
   );
 }
