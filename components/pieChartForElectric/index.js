@@ -12,7 +12,7 @@ ChartJS.register(
     Tooltip,
     Legend);
 
-export default function AreaChart() {
+export default function PieChartForElectric() {
 
     const [chartData,setChartData] = useState({
         datasets: []
