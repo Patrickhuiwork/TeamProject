@@ -3,9 +3,14 @@ import Image from 'next/image'
 import styles from '@/styles/learning.module.css'
 import Bluebutton from '@/components/Bluebutton'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 import LargeButton from '@/components/LargeButton'
+import Accordion from '@/components/Accordion'
+import { matrix } from '@/data/matrix'
 
 export default function Learning() {
+  const [data, setData] = useState([...matrix.courses]);
+
   return (
     <>
       <Head>
@@ -33,9 +38,12 @@ export default function Learning() {
         </div>
 
         <div className={styles.more2LearningOptions}>
-        <Link href='/learningFireCause'><LargeButton>Learn more about the most common fire causes</LargeButton></Link>
-        <Link href='/learningInCaseOfAFire'><LargeButton>What to do in case of a fire?</LargeButton></Link>
+          <Link href='/learningFireCause'><LargeButton>Learn more about the most common fire causes</LargeButton></Link>
+          <Link href='/learningInCaseOfAFire'><LargeButton>What to do in case of a fire?</LargeButton></Link>
         </div>
+
+        <Accordion />
+
       </main>
     </>
   )
