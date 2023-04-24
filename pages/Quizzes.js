@@ -28,7 +28,10 @@ export default function Quizzes() {
             
             <div className={styles.quizcontainer}>
                 <img src='/illustrations/grease fire.svg' className={styles.illustration}/>
-                <Bluebutton>Grease Fires</Bluebutton>
+                <Link href='/Quiz2'>
+                  <Bluebutton>Grease Fires</Bluebutton>
+                  
+                </Link>
             </div>
             <div className={styles.quizcontainer}>
                 <img src='/illustrations/ordinary fire.svg' className={styles.illustration}/>
