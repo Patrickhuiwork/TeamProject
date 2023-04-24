@@ -1,5 +1,5 @@
   .illustration{
-    margin-top: 5rem;
+    margin-top: 2rem;
     align-items: center;
     width: 25rem;
     height: 25rem;
@@ -52,7 +52,7 @@
   
   @media only screen and (max-width: 768px) {
     .illustration{
-      margin-top: 2rem;
+      margin-top: .5rem;
       align-items: center;
       width: 15rem;
       height: 15rem;

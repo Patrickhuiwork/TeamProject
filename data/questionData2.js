@@ -5,7 +5,7 @@ export const questions = [
       questionoptions: 'A: Baking soda',
       questionoptions1: 'B: water',
       options: ['A', 'B'],
-      imageSrc: '/illustrations/badventilation.svg',
+      imageSrc: '/illustrations/baking soda water.svg',
       answer: 'A',
       explanation: 'Baking soda is better than water for extinguishing grease fires as water can cause the fire to spread. Baking soda releases carbon dioxide that smothers the fire by removing the oxygen it needs to burn.',
   
@@ -16,7 +16,7 @@ export const questions = [
       questionoptions: 'A: Clean the stove and hood regularly to remove grease buildup',
       questionoptions1: 'B: Always keep a lid nearby in case of fire',
       options: ['A', 'B'],
-      imageSrc: '/illustrations/fire extinguisher.svg',
+      imageSrc: '/illustrations/stove.svg',
       answer: 'A',
       explanation: 'Regularly cleaning the hood and stove to remove buildup greatly reduces the risk of a grease fire starting in the first place'
     },
@@ -26,7 +26,7 @@ export const questions = [
       questionoptions: 'A: Class B',
       questionoptions1: 'B: Class K',
       options: ['A', 'B'],
-      imageSrc: '/illustrations/outlet.svg',
+      imageSrc: '/illustrations/class K fire extinguisher.svg',
       answer: 'B',
       explanation: 'Class K fire extinguishers contain a special extinguishing agent that is effective in smothering fires fueled by cooking oils and fats, and can cool down the high temperatures associated with grease fires to prevent re-ignition.'
     },

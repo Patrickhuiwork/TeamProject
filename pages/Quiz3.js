@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Buttonv2 from '../components/Buttonv2';
 import QuizButton from '../components/QuizButton';
 import styles from '@/styles/Quiz.module.css'
-import { questions } from '@/data/questionData2';
+import { questions } from '@/data/questionData3';
 
 
 export default function Quiz() {
@@ -76,7 +76,7 @@ export default function Quiz() {
         )}
         {currentQuestion === questions.length - 1 && selectedAnswer !== '' && (
           <div>
-            <Link href={`/results2?score=${calculateScore()}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>
+            <Link href={`/results3?score=${calculateScore()}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>
               <QuizButton>See Results </QuizButton>
             </Link>
           </div>
