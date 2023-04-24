@@ -6,10 +6,8 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import LargeButton from '@/components/LargeButton'
 import Accordion from '@/components/Accordion'
-import { matrix } from '@/data/matrix'
 
 export default function Learning() {
-  const [data, setData] = useState([...matrix.courses]);
 
   return (
     <>
