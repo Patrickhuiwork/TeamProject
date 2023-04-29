@@ -6,7 +6,6 @@ import ReturnIcon from '@/components/returnIcon'
 import Bluebutton from '@/components/Bluebutton'
 import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
-import PieChartForElectric from '@/components/PieChartForElectric'
 
 export default function LearningElectric() {
     return (

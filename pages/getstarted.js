@@ -17,7 +17,7 @@ export default function Activites() {
       </Head>
 
       <main className={styles.main}>
-        <h1>Homasdsade</h1>
+        <h1>Home</h1>
         <p className={styles.reccommendationmessage}>We recommend having a look on our <span>Learn More</span> section before jumping into the <span>Quizzes</span></p>
         <div className={styles.container}>
           <Link href='/learning'><Squarebutton1>Learn More</Squarebutton1></Link>
