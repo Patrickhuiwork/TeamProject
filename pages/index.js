@@ -7,6 +7,7 @@ import LineChart from '@/components/LineChart'
 
 export default function Home() {
 
+  var appname = process.env.NEXT_PUBLIC_APPNAME
   return (
     <>
       <Head>
@@ -16,6 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        {appname}
         <Image src='/Logo/stacklogo.svg' width='550' height='400' className={styles.logo}/>
         <p className={styles.quote}>"Join the fight against fire hazards with Heat Help - The ultimate fire safety app!"</p>
         <p className={styles.description}>
