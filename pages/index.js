@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Button from '@/components/Button'
 import Link from 'next/link'
-import LineChart from '@/components/LineChart'
+import PieChartForElectric from '@/components/pieChartForElectric'
 
 export default function Home() {
 
@@ -28,7 +28,6 @@ export default function Home() {
 
         <Link href='/getstarted'><Button>Tutorial</Button></Link>
 
-        <LineChart/>
 
 
       </main>

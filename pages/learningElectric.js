@@ -6,7 +6,6 @@ import ReturnIcon from '@/components/returnIcon'
 import Bluebutton from '@/components/Bluebutton'
 import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
-import BarChart from '@/components/BarChart'
 
 export default function LearningElectric() {
     return (
@@ -36,7 +35,6 @@ export default function LearningElectric() {
                   <Redbutton>Take the quiz</Redbutton>
                 </Link>
                 <Link href='/learningGrease'><Bluebutton>Continue to Grease Fire ⮞</Bluebutton></Link>
-                <BarChart/>
                 
             </div>
             
