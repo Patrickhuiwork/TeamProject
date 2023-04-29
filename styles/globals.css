@@ -48,9 +48,13 @@
 }
 
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: var(--primary-color);
+  background: linear-gradient(to bottom, var(--color-gradient-start), var(--color-gradient2-end));
+  width: 100%;
+  display: block;
+  background-attachment: fixed;
 }
 
 /*Logo hover*/
