@@ -20,6 +20,31 @@
   /*Red Hues*/
   --red-hue2: #FF4848;
   --red-hue3: #c92222;
+
+  --orange-hue1: #FFB978;
+
+  /*gradients*/
+  --color-gradient1-start: #FFFFFF;
+  --color-gradient1-end: #DEDDFF;
+  /*linear-gradient(to bottom, var(--color-gradient1-start), var(--color-gradient1-end));     */
+
+  --color-gradient2-start: #78DFFF;
+  --color-gradient2-end: #479AFD;
+  /* linear-gradient(to bottom, var(--color-gradient2-start), var(--color-gradient2-end)) */
+
+  --color-gradient3-start: #FF701F;
+  --color-gradient3-end: #FFA776;
+  /* linear-gradient(to bottom, var(--color-gradient3-start), var(--color-gradient3-end)) */
+
+  --color-gradient4-start: #DADADA;
+  --color-gradient4-end: #FFFFFF;
+
+  /* linear-gradient(to bottom, var(--color-gradient4-start), var(--color-gradient4-end)) */
+
+  --color-gradient-start: #E3EDFF;
+  --color-gradient-end: #ABD7FF;
+
+  /* linear-gradient(to bottom, var(--color-gradient5-start), var(--color-gradient5-end)) */
 }
 
 body {
