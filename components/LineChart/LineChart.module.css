@@ -1,0 +1,9 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    padding: 1rem;
+    outline: 8px solid rgb(129, 107, 255);border-radius: 2rem;
+    margin: 2rem;
+}

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Button from '@/components/Button'
 import Link from 'next/link'
+import LineChart from '@/components/LineChart'
 
 export default function Home() {
 
@@ -24,6 +25,9 @@ export default function Home() {
         <Link href='/getstarted'><Button>Get Started</Button></Link>
 
         <Link href='/getstarted'><Button>Tutorial</Button></Link>
+
+        <LineChart/>
+
 
       </main>
     </>
