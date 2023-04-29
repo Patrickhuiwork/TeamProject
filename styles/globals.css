@@ -33,7 +33,7 @@
   /* linear-gradient(to bottom, var(--color-gradient2-start), var(--color-gradient2-end)) */
 
   --color-gradient3-start: #FF701F;
-  --color-gradient3-end: #FFA776;
+  --color-gradient3-end: #fc9038;
   /* linear-gradient(to bottom, var(--color-gradient3-start), var(--color-gradient3-end)) */
 
   --color-gradient4-start: #DADADA;
@@ -51,11 +51,12 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, var(--color-gradient-start), var(--color-gradient2-end));
+  background: linear-gradient(to bottom, var(--color-gradient-start), var(--color-gradient-end));
   width: 100%;
   display: block;
   background-attachment: fixed;
 }
+
 
 /*Logo hover*/
 .logo:hover {

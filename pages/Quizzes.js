@@ -15,33 +15,37 @@ export default function Quizzes() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>Quizzes</h1>
-        <p className={styles.description}>Try one of our quizzes to asses your knowledge on different kinds of fires!</p>
-        <div className={styles.threeoptions}>
-            <div className={styles.quizcontainer}>
-                <img src='/illustrations/electric fire.svg' className={styles.illustration}/>
-                <Link href='/Quiz1'>
+        <div className={styles.box}>
+          <h1>Quizzes</h1>
+          <p className={styles.description}>Try one of our quizzes to asses your knowledge on different kinds of fires!</p>
+          <div className={styles.threeoptions}>
+              <div className={styles.quizcontainer}>
+                  <img src='/illustrations/electric fire.svg' className={styles.illustration}/>
+                  <Link href='/Quiz1'>
 
-                <Bluebutton>Electrical Fires</Bluebutton>
-                </Link>
-            </div>
-            
-            <div className={styles.quizcontainer}>
-                <img src='/illustrations/grease fire.svg' className={styles.illustration}/>
-                <Link href='/Quiz2'>
-                  <Bluebutton>Grease Fires</Bluebutton>
-                  
-                </Link>
-            </div>
-            <div className={styles.quizcontainer}>
-                <img src='/illustrations/ordinary fire.svg' className={styles.illustration}/>
-                <Link href='Quiz3'>
-                  <Bluebutton>Ordinary Fires</Bluebutton>
+                  <Bluebutton>Electrical Fires</Bluebutton>
+                  </Link>
+              </div>
+              
+              <div className={styles.quizcontainer}>
+                  <img src='/illustrations/grease fire.svg' className={styles.illustration}/>
+                  <Link href='/Quiz2'>
+                    <Bluebutton>Grease Fires</Bluebutton>
+                    
+                  </Link>
+              </div>
+              <div className={styles.quizcontainer}>
+                  <img src='/illustrations/ordinary fire.svg' className={styles.illustration}/>
+                  <Link href='Quiz3'>
+                    <Bluebutton>Ordinary Fires</Bluebutton>
 
-                </Link>
-            </div>
+                  </Link>
+              </div>
+
+          </div>
 
         </div>
+
 
       </main>
     </>
