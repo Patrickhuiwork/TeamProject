@@ -4,6 +4,7 @@ import Buttonv2 from '../components/Buttonv2';
 import QuizButton from '../components/QuizButton';
 import styles from '@/styles/Quiz.module.css'
 import { questions } from '@/data/questionData1';
+import ProgressBar from '@/components/ProgressBar';
 
 
 export default function Quiz() {
@@ -50,34 +51,29 @@ export default function Quiz() {
 
   return (
     <div className={styles.main}>
-
       <div className={styles.box}>
-
+        <ProgressBar currentStep={currentQuestion + 1} totalSteps={questions.length} />
         <div className={styles.questioncontainer}>
-          
-        <h1 className={styles.quizTitle}>Electrical Fires</h1>
-            <p className={styles.question}>{question}</p>
-            <div className={styles.options}>
-              <p className={styles.questionoptions}>{questionoptions}</p>
-              <p className={styles.questionoptions}>{questionoptions1}</p>
-
-            </div>
-
+          <h1 className={styles.quizTitle}>Electrical Fires</h1>
+          <p className={styles.question}>{question}</p>
+          <div className={styles.options}>
+            <p className={styles.questionoptions}>{questionoptions}</p>
+            <p className={styles.questionoptions}>{questionoptions1}</p>
+          </div>
           <img className={styles.illustration} src={imageSrc} />
           <div className={styles.buttons}>
             <Buttonv2 onClick={() => handleAnswer(options[0])} disabled={selectedAnswer !== ''}>Select {options[0]}</Buttonv2>
             <Buttonv2 onClick={() => handleAnswer(options[1])} disabled={selectedAnswer !== ''}>Select {options[1]}</Buttonv2>
-
           </div>
-            {selectedAnswer !== '' && (
-              <div className={styles.nextQuestion}>
+          {selectedAnswer !== '' && (
+            <div className={styles.nextQuestion}>
               {currentQuestion !== 2 && <QuizButton onClick={handleNextQuestion}>Next Question</QuizButton>}
-              </div>
-            )}
-            {currentQuestion === questions.length - 1 && selectedAnswer !== '' && (
-              <div>
-                <Link href={`/results1?score=${calculateScore()}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>
-                  <QuizButton>See Results </QuizButton>
+            </div>
+          )}
+          {currentQuestion === questions.length - 1 && selectedAnswer !== '' && (
+            <div>
+              <Link href={`/results1?score=${calculateScore()}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>
+                <QuizButton>See Results </QuizButton>
                 </Link>
               </div>
             )}
