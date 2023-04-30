@@ -63,6 +63,8 @@ export default function Quiz() {
           </div>
 
         </div>
+
+        <img className={styles.illustration} src={imageSrc} />
         <div className={styles.buttons}>
           <Buttonv2 onClick={() => handleAnswer(options[0])} disabled={selectedAnswer !== ''}>Select {options[0]}</Buttonv2>
           <Buttonv2 onClick={() => handleAnswer(options[1])} disabled={selectedAnswer !== ''}>Select {options[1]}</Buttonv2>
@@ -81,7 +83,6 @@ export default function Quiz() {
             </Link>
           </div>
         )}
-        <img className={styles.illustration} src={imageSrc} />
       </div>
     </div>
   );
