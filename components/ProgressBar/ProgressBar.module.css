@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   height: 25px;
-  width: 350px;
+  width: 500px;
   border-radius: 50px;
   background: linear-gradient(to bottom, var(--color-gradient2-start), var(--color-gradient2-end));
   overflow: hidden;
@@ -22,4 +22,10 @@
 
 .completed {
   background: linear-gradient(to bottom, var(--color-gradient2-start), var(--color-gradient2-end));
+}
+
+@media only screen and (max-width: 768px) {
+  .progressBar {
+    width: 300px;
+  }
 }
