@@ -21,7 +21,8 @@ export default function LearningGrease() {
         <Link href='/learning'><ReturnIcon/></Link>
 
 
-        <main className={styles.main}>               
+        <main className={styles.main}>   
+        <div className={styles.box}>            
             <h1>Learn about Grease Fire</h1>
             <img src='/illustrations/grease fire.svg' className={styles.illustration} />   
             <p className={styles.description}>A grease fire is a type of fire that occurs when cooking oil or grease reaches its ignition point and catches fire. Grease fires are common in kitchens and can be dangerous if not handled properly</p>
@@ -34,6 +35,8 @@ export default function LearningGrease() {
                 <Redbutton>Take the quiz</Redbutton>
                 <Link href='/learningOrdinary'><Bluebutton>Continue to Ordinary Fire ⮞</Bluebutton></Link>
                 
+            </div>
+
             </div>
             
           

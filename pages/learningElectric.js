@@ -20,7 +20,8 @@ export default function LearningElectric() {
         <Link href='/learning'><ReturnIcon/></Link>
 
 
-        <main className={styles.main}>               
+        <main className={styles.main}>
+          <div className={styles.box}>             
             <h1>Learn about Electric Fire</h1>
             <img src='/illustrations/electric fire.svg' className={styles.illustration} />   
             <p className={styles.description}>Electric currents generate heat and when they get too hot it can loosen the connection causing a arc of electricity which can catch fires.</p>
@@ -37,6 +38,7 @@ export default function LearningElectric() {
                 <Link href='/learningGrease'><Bluebutton>Continue to Grease Fire ⮞</Bluebutton></Link>
                 
             </div>
+          </div>  
             
           
         </main>

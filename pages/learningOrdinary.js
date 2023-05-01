@@ -21,7 +21,8 @@ export default function LearningOrdinary() {
         <Link href='/learning'><ReturnIcon/></Link>
 
 
-        <main className={styles.main}>               
+        <main className={styles.main}>   
+        <div className={styles.box}>           
             <h1>Learn about Ordinary Fire</h1>
             <img src='/illustrations/ordinary fire.svg' className={styles.illustration} />   
             <p className={styles.description}>An ordinary fire refers to a standard fire that occurs when a combustible material, such as wood, paper, fabric, or other flammable substances, comes into contact with a heat source and reaches its ignition point. </p>
@@ -35,6 +36,8 @@ export default function LearningOrdinary() {
                 <Link href='/learningElectric'><Bluebutton>Start again from Electrical Fires ⮞</Bluebutton></Link>
                 
             </div>
+
+            </div> 
             
           
         </main>

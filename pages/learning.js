@@ -18,29 +18,33 @@ export default function Learning() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>Learn more</h1>
-        <h2>Choose the folllowing types of fire below to learn more about</h2>
-        <div className={styles.threeoptions}>
-          <div className={styles.learningcontainer}>
-            <img src='/illustrations/electric fire.svg' className={styles.illustration} />
-            <Link href='/learningElectric'><Bluebutton>Electrical Fire</Bluebutton></Link>
+        <div className={styles.box}>
+          <h1>Learn more</h1>
+          <h2>Choose the folllowing types of fire below to learn more about</h2>
+          <div className={styles.threeoptions}>
+            <div className={styles.learningcontainer}>
+              <img src='/illustrations/electric fire.svg' className={styles.illustration} />
+              <Link href='/learningElectric'><Bluebutton>Electrical Fire</Bluebutton></Link>
+            </div>
+            <div className={styles.learningcontainer}>
+              <img src='/illustrations/grease fire.svg' className={styles.illustration} />
+              <Link href='/learningGrease'><Bluebutton>Grease Fire</Bluebutton></Link>
+            </div>
+            <div className={styles.learningcontainer}>
+              <img src='/illustrations/ordinary fire.svg' className={styles.illustration} />
+              <Link href='/learningOrdinary'><Bluebutton>Ordinary Fire</Bluebutton></Link>
+            </div>
           </div>
-          <div className={styles.learningcontainer}>
-            <img src='/illustrations/grease fire.svg' className={styles.illustration} />
-            <Link href='/learningGrease'><Bluebutton>Grease Fire</Bluebutton></Link>
-          </div>
-          <div className={styles.learningcontainer}>
-            <img src='/illustrations/ordinary fire.svg' className={styles.illustration} />
-            <Link href='/learningOrdinary'><Bluebutton>Ordinary Fire</Bluebutton></Link>
-          </div>
-        </div>
 
-        <div className={styles.more2LearningOptions}>
-          <Link href='/learningFireCause'><LargeButton>Learn more about the most common fire causes</LargeButton></Link>
-          <Link href='/learningInCaseOfAFire'><LargeButton>What to do in case of a fire?</LargeButton></Link>
-        </div>
+          <div className={styles.more2LearningOptions}>
+            <Link href='/learningFireCause'><LargeButton>Learn more about the most common fire causes</LargeButton></Link>
+            <Link href='/learningInCaseOfAFire'><LargeButton>What to do in case of a fire?</LargeButton></Link>
+          </div>
 
-        <Accordion />
+          <Accordion/>
+
+        
+        </div>
 
       </main>
     </>
