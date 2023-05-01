@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/learningFireCause.module.css'
 import ReturnIcon from '@/components/returnIcon'
+import PieChartForFireCause from '@/components/pieChartForFireCause'
 
 export default function LearningFireCause() {
     return (
@@ -50,7 +51,7 @@ export default function LearningFireCause() {
 
                 <div>
                     <h3>Do you know?</h3>
-                    <Image src='/imagery/fire-causes/top fire causes.jpg' width='300' height='300' />
+                    <div className={styles.chart}><PieChartForFireCause/></div>
                 </div>
             </main>
         </>
