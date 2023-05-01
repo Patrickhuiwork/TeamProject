@@ -7,7 +7,8 @@ import PieChartForElectric from '@/components/pieChartForElectric'
 
 export default function Home() {
 
-  var appname = process.env.NEXT_PUBLIC_APPNAME
+  var name = process.env.NEXT_PUBLIC_NAME;
+
   return (
     <>
       <Head>
@@ -17,9 +18,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        {name}
         <div className={styles.box}>
 
-          {appname}
           <img src='/Logo/stacklogo.svg'className={styles.logo}/>
           <p className={styles.quote}>"Join the fight against fire hazards with Heat Help - The ultimate fire safety app!"</p>
           <p className={styles.description}>
