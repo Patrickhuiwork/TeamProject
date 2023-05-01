@@ -1,18 +1,35 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title{
+  margin-bottom: 10px;
+}
 
 .container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .reccommendationmessage{
-    text-align: center;
-    width: 330px;
-    font-weight: 550;
+  text-align: center;
+  width: 330px;
+  font-weight: 550;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, var(--color-gradient1-start), var(--color-gradient1-end));
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  width: 380px;
+  margin-bottom: 1rem;
 }

@@ -16,7 +16,7 @@ export default function Results() {
 
   return (
     <div className={styles.main}>
-      <div className={styles.resultscontainer}>
+      <div className={styles.box}>
 
         <h1>Results</h1>
         <p className={styles.score}>Your score is {score} out of {totalQuestions}!</p>

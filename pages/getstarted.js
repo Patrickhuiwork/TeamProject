@@ -17,7 +17,9 @@ export default function Activites() {
       </Head>
 
       <main className={styles.main}>
-        <h1>Home</h1>
+        <div className={styles.box}>
+
+        <h1 className={styles.title}>Home</h1>
         <p className={styles.reccommendationmessage}>We recommend having a look on our <span>Learn More</span> section before jumping into the <span>Quizzes</span></p>
         <div className={styles.container}>
           <Link href='/learning'><Squarebutton1>Learn More</Squarebutton1></Link>
@@ -32,6 +34,7 @@ export default function Activites() {
         </div>
         <div>
           <Link href='/tutorial'><Squarebutton2>Tutorial</Squarebutton2></Link>
+        </div>
         </div>
       </main>
     </>
