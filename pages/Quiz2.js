@@ -51,7 +51,6 @@ export default function Quiz() {
 
   return (
     <div className={styles.main}>
-      <div className={styles.leftalign}><Link href='/Quizzes'><ReturnIcon /></Link></div>
 
       <div className={styles.box}>
         <ProgressBar currentStep={currentQuestion + 1} totalSteps={questions.length} />
