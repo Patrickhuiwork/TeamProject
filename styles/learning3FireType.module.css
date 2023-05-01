@@ -51,7 +51,7 @@
     align-self: center;
     background: linear-gradient(to bottom, var(--color-gradient1-start), var(--color-gradient1-end));
     border-radius: 20px;
-    padding: 4rem;
+    padding: 1rem 4rem 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,13 +67,12 @@
 
 
     .box {
-        margin: 4rem;
+        margin: 1rem 4rem 3rem;
         display: flex;
         flex-direction: column;
         align-self: center;
         background: linear-gradient(to bottom, var(--color-gradient1-start), var(--color-gradient1-end));
         border-radius: 20px;
-        padding: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;

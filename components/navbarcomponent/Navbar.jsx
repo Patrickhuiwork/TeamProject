@@ -9,12 +9,12 @@ const MENU_LIST = [
     href: '/getstarted',
   },
   {
-    title: 'Quizzes',
-    href: '/Quizzes',
-  },
-  {
     title: 'Learn More',
     href: '/learning',
+  },
+  {
+    title: 'Quizzes',
+    href: '/Quizzes',
   },
   {
     title: 'About Us',

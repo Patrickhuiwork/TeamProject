@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 3rem 0;
 
 }
 
@@ -23,4 +24,9 @@
         width: 300px;
         text-align: left;
     }
+
+    .flex {
+        width: 300px;
+    }
+
 }

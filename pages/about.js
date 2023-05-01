@@ -13,6 +13,7 @@ export default function About() {
       </Head>
       <main className={styles.main}>
         <h1>About Us</h1>
+        <Image src='/icons/pagesIcon/about us icon.svg' width='200' height='120' />
         <p className={styles.description}>Heat Help is not just an informational app but a fun and interactive quiz that will keep you engaged with adaptive knowledge questions. We are well aware of the battle for the viewers time & attention on mobile apps, our service will stand out by inciting the desire to learn and making it fun to do so. We got you.</p>
         <h3>Our team members</h3>
         <div className={styles.gridof4ppl}>

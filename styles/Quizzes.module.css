@@ -67,7 +67,6 @@
     }
 
     .box {
-        margin: 4rem;
         display: flex;
         flex-direction: column;
         align-self: center;

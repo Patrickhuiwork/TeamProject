@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/tutorial.module.css'
+import Carousel from '@/components/Carousel'
 
 export default function Tutorial() {
   return (
@@ -13,6 +14,7 @@ export default function Tutorial() {
       </Head>
       <main className={styles.main}>
         <h1>Tutorial</h1>
+        <Image src='/icons/pagesIcon/tutorial icon.svg' width='150' height='150' />
         <img src='https://d2uolguxr56s4e.cloudfront.net/img/kartrapages/video_player_placeholder.gif' width='350' height='230' />
 
         <ol className={styles.description}>
@@ -26,6 +28,9 @@ export default function Tutorial() {
             you will get feedback.
           </li>
         </ol>
+
+        <h3>App Interface Overview</h3>
+        <Carousel/>
       </main>
     </>
   )

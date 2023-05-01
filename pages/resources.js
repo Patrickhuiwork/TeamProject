@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/resources.module.css'
+import Link from 'next/link'
 
 export default function Resources() {
   return (
@@ -13,7 +14,8 @@ export default function Resources() {
       </Head>
       <main className={styles.main}>
         <h1>Resources</h1>
-        <h3>Vancouver fire and rescue services map</h3>
+        <Image src='/icons/pagesIcon/resources icon.svg' width='200' height='150' />
+        <h3 className={styles.flex}>Vancouver fire and rescue services map</h3>
         <Image src='/imagery/service-map.png' width='350' height='230' />
         <h3>Fire emergency: 911</h3>
         <div className={styles.description}>
@@ -21,7 +23,7 @@ export default function Resources() {
             <h4><b>Vancouver Fire & Radius Security:</b></h4>
             <ul>
               <li><b>Phone: </b> 604.232.3473</li>
-              <li><b>Website: </b> https://www.vanfire.com/</li>
+              <li><b>Website: </b> <Link href = "https://www.vanfire.com/">https://www.vanfire.com/</Link></li>
             </ul>
           </div>
 
@@ -29,13 +31,13 @@ export default function Resources() {
             <h4><b>Fire Protection Association:</b></h4>
             <ul>
               <li><b>Phone: </b> 617.984.7275</li>
-              <li><b>Website: </b> https://www.nfpa.org/</li>
+              <li><b>Website: </b> <Link href = "https://www.nfpa.org/">https://www.nfpa.org/</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4><b>Fire services, standards and reporting:</b> </h4>
-            <p className={styles.flex}>https://www2.gov.bc.ca/gov/content/safety/emergency-management/fire-safety</p>
+            <h4 ><b>Fire services, standards and reporting:</b> </h4>
+            <p className={styles.flex}><Link href = "https://www2.gov.bc.ca/gov/content/safety/emergency-management/fire-safety ">https://www2.gov.bc.ca/gov/content/safety/emergency-management/fire-safety </Link></p>
           </div>
 
           <div className={styles.flex}>

@@ -5,6 +5,7 @@ import QuizButton from '../components/QuizButton';
 import styles from '@/styles/Quiz.module.css'
 import { questions } from '@/data/questionData1';
 import ProgressBar from '@/components/ProgressBar';
+import ReturnIcon from '@/components/returnIcon'
 
 
 export default function Quiz() {
@@ -21,7 +22,7 @@ export default function Quiz() {
         question: questions[currentQuestion].question,
         answer: answer,
         isCorrect,
-        explanation: isCorrect ? questions[currentQuestion].explanation : questions[currentQuestion].inccorectexplanation,
+        explanation: isCorrect ? questions[currentQuestion].explanation : questions[currentQuestion].explanation,
       };
       const newAnswers = [...answers];
       newAnswers[currentQuestion] = answerObject;
@@ -50,9 +51,13 @@ export default function Quiz() {
   const { question, options, imageSrc, questionoptions, questionoptions1 } = questions[currentQuestion];
 
   return (
+
+
     <div className={styles.main}>
+      <div className={styles.leftalign}><Link href='/Quizzes'><ReturnIcon /></Link></div>
+
       <div className={styles.box}>
-        <ProgressBar currentStep={currentQuestion + 1} totalSteps={questions.length} />
+        <ProgressBar currentStep={currentQuestion + 1} totalSteps={questions.length}/>
         <div className={styles.questioncontainer}>
           <h1 className={styles.quizTitle}>Electrical Fires</h1>
           <p className={styles.question}>{question}</p>
@@ -74,11 +79,11 @@ export default function Quiz() {
             <div>
               <Link href={`/results1?score=${calculateScore()}&totalQuestions=${questions.length}&answers=${JSON.stringify(answers)}`}>
                 <QuizButton>See Results </QuizButton>
-                </Link>
-              </div>
-            )}
+              </Link>
+            </div>
+          )}
 
-          </div>
+        </div>
       </div>
     </div>
 

@@ -19,22 +19,47 @@ export default function Activites() {
       <main className={styles.main}>
         <div className={styles.box}>
 
-        <h1 className={styles.title}>Home</h1>
-        <p className={styles.reccommendationmessage}>We recommend having a look on our <span>Learn More</span> section before jumping into the <span>Quizzes</span></p>
-        <div className={styles.container}>
-          <Link href='/learning'><Squarebutton1>Learn More</Squarebutton1></Link>
-          <div>➟</div>
-          <Link href='/Quizzes'><Squarebutton1>Quizzes</Squarebutton1></Link>
-        </div>
+          <h1 className={styles.title}>Home</h1>
+          <p className={styles.reccommendationmessage}>We recommend having a look on our <span>Learn More</span> section before jumping into the <span>Quizzes</span></p>
+          <div className={styles.container}>
+            <Link href='/learning'><Squarebutton1>
+              <div className={styles.boxCenter}>
+                Learn More
+                <Image src='/icons/pagesIcon/learn more icon.svg' width='150' height='100' />
+              </div>
+            </Squarebutton1></Link>
+            <div>➟</div>
+            <Link href='/Quizzes'><Squarebutton1>
+              <div className={styles.boxCenter}>
+                Quizzes
+                <Image src='/icons/pagesIcon/quiz icon.svg' width='110' height='85' />
+              </div>
+            </Squarebutton1></Link>
+          </div>
 
-        <p className={styles.reccommendationmessage}>Discover more about our app</p>
-        <div className={styles.container}>
-          <Link href='/about'><Squarebutton2>About Us</Squarebutton2></Link>
-          <Link href='/resources'><Squarebutton2>Resources</Squarebutton2></Link>
-        </div>
-        <div>
-          <Link href='/tutorial'><Squarebutton2>Tutorial</Squarebutton2></Link>
-        </div>
+          <p className={styles.reccommendationmessage}>Discover more about our app</p>
+          <div className={styles.container}>
+            <Link href='/about'><Squarebutton2>
+              <div className={styles.boxCenter}>
+                About Us
+                <Image src='/icons/pagesIcon/about us icon.svg' width='110' height='85' />
+              </div>
+            </Squarebutton2></Link>
+            <Link href='/resources'><Squarebutton2>
+              <div className={styles.boxCenter}>
+                Resources
+                <Image src='/icons/pagesIcon/resources icon.svg' width='110' height='85' />
+              </div>
+            </Squarebutton2></Link>
+          </div>
+          <div>
+            <Link href='/tutorial'><Squarebutton2>
+              <div className={styles.boxCenter}>
+                Tutorial
+                <Image src='/icons/pagesIcon/tutorial icon.svg' width='100' height='80' />
+              </div>
+            </Squarebutton2></Link>
+          </div>
         </div>
       </main>
     </>
