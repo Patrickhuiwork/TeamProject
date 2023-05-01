@@ -18,7 +18,7 @@ export default function Results() {
     <div className={styles.main}>
       <div className={styles.box}>
 
-        <h1>Results</h1>
+        <h1 className={styles.title}>Results</h1>
         <p className={styles.score}>Your score is {score} out of {totalQuestions}!</p>
         <div className={styles.resultscontainer}>
         {parsedAnswers.map((answer, index) => (

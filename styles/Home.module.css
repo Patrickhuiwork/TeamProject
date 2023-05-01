@@ -1,11 +1,11 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  min-height: 80vh;
+  padding: 50px 0;
 }
-
 .description{
   font-size: 18px;
   text-align: center;
@@ -21,5 +21,42 @@
 }
 
 .logo{
-  width: 300px;
+  width: 350px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, var(--color-gradient1-start), var(--color-gradient1-end));
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  width: 400px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .box {
+    width: 300px;
+  }
+
+  .logo{
+    width: 250px;
+  }
+
+  .quote{
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+    font-family: 'Lato Bold', sans-serif;
+    font-weight: 700;
+  }
+
+  .description{
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+  }
 }
