@@ -2,8 +2,8 @@
     margin-top: 2rem;
     border: none;
     border-radius: 10px;
-    color: var(--primary-color);
-    background-color:var(--red-hue2);
+    color: var(--secondary-color);
+    background: linear-gradient(to bottom, var(--color-gradient1-start), var(--color-gradient1-end));
     cursor: pointer;
     font-size: 25px;
     font-family: 'Poppins Semi-Bold', sans-serif;
@@ -13,12 +13,13 @@
     margin: 5px;
     text-align: center;
     justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
   }
   
   .button:hover {
     transition: 300ms;
-    background-color:#c92222;
-    color: var(--primary-color);
+    box-shadow: 0 0 2px rgb(232, 255, 253), 0 0 4px rgb(191, 235, 255), 0 0 10px rgb(66, 186, 255), 0 0 15px rgb(66, 79, 255);
   }
 
   @media only screen and (max-width: 768px) {
