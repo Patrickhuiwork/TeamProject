@@ -15,22 +15,29 @@ export default function LearningInCaseOfAFire() {
             </Head>
             <Link href='/learning'><ReturnIcon /></Link>
             <main className={styles.main}>
-                <h3>What to do in case of a fire?</h3>
-                <div className={styles.flex}>
-                    <div>
-                        <Image src='/imagery/in-case-of-a-fire/fire exit.jpg' width='150' height='100' />
-                        <p>Find the nearest EXIT</p>
-                    </div>
-
-                    <div>
-                        <Image src='/imagery/in-case-of-a-fire/use exit.jpg' width='150' height='200' />
-                        <p>Use Stairs in stead of Lift</p>
-                    </div>
+                <div className={styles.box}>
+                    <h1>Fire Action</h1>
+                    <h2>If you discover or suspect a fire</h2>
                 </div>
 
-                <div>
-                    <Image src='/imagery/in-case-of-a-fire/fire action.jpg' width='320' height='350' />
-                    <p>Use Stairs in stead of Lift</p>
+                <div className={styles.box2}>
+                    <h1>1.</h1>
+                    <h2>Operate the nearest fire alarm call point</h2>
+                </div>
+
+                <div className={styles.box3}>
+                    <h1>2.</h1>
+                    <h2>leave the building by the nearest available exit</h2>
+                </div>
+
+                <div className={styles.box3}>
+                    <h1>3.</h1>
+                    <h2>Report to person in charge of Assembly point</h2>
+                </div>
+
+                <div className={styles.box2}>
+                    <h1>4.</h1>
+                    <h2>Do not stop to collect personal belongings</h2>
                 </div>
             </main>
         </>
