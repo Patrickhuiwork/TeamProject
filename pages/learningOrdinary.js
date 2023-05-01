@@ -7,6 +7,7 @@ import Bluebutton from '@/components/Bluebutton'
 import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
 import PieChartForOrdinary from '@/components/pieChartForOrdinary'
+import Learnbutton from '@/components/Learnbutton'
 
 export default function LearningOrdinary() {
     return (
@@ -35,7 +36,7 @@ export default function LearningOrdinary() {
 
             <div className={styles.buttons}>
                 <Redbutton>Take the quiz</Redbutton>
-                <Link href='/learningElectric'><Bluebutton>Start again from Electrical Fires ⮞</Bluebutton></Link>
+                <Link href='/learningElectric'><Learnbutton>Start again from Electrical Fires ⮞</Learnbutton></Link>
                 
             </div>
 

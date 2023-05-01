@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/learning3FireType.module.css'
 import ReturnIcon from '@/components/returnIcon'
-import Bluebutton from '@/components/Bluebutton'
+import Learnbutton from '@/components/Learnbutton'
 import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
 import PieChartForElectric from '@/components/pieChartForElectric'
@@ -37,7 +37,7 @@ export default function LearningElectric() {
                 <Link href='/Quiz1'>
                   <Redbutton>Take the quiz</Redbutton>
                 </Link>
-                <Link href='/learningGrease'><Bluebutton>Continue to Grease Fire ⮞</Bluebutton></Link>
+                <Link href='/learningGrease'><Learnbutton>Continue to Grease Fire ⮞</Learnbutton></Link>
                 
             </div>
           </div>  

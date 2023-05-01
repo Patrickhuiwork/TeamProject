@@ -7,6 +7,7 @@ import Bluebutton from '@/components/Bluebutton'
 import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
 import PieChartForGrease from '@/components/pieChartForGrease'
+import Learnbutton from '@/components/Learnbutton'
 
 export default function LearningGrease() {
     return (
@@ -35,7 +36,7 @@ export default function LearningGrease() {
 
             <div className={styles.buttons}>
                 <Redbutton>Take the quiz</Redbutton>
-                <Link href='/learningOrdinary'><Bluebutton>Continue to Ordinary Fire ⮞</Bluebutton></Link>
+                <Link href='/learningOrdinary'><Learnbutton>Continue to Ordinary Fire ⮞</Learnbutton></Link>
                 
             </div>
 
