@@ -6,7 +6,7 @@ import ReturnIcon from '@/components/returnIcon'
 import Bluebutton from '@/components/Bluebutton'
 import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
-
+import PieChartForOrdinary from '@/components/pieChartForOrdinary'
 
 export default function LearningOrdinary() {
     return (
@@ -30,6 +30,8 @@ export default function LearningOrdinary() {
             <Image src='/imagery/fire-causes/kid-with-fire.jpg' width='350' height='200'/>
             <p className={styles.description}>Ordinary fires can typically be extinguished using appropriate fire extinguishing methods, such as water, fire extinguishers, fire blankets, or other extinguishing agents, depending on the type of fuel and the size and location of the fire. The appropriate fire extinguishing method should be chosen based on the type of fire to avoid making the situation worse.</p>            
             <p className={styles.description2}>Proper fire prevention measures, such as using caution with open flames, maintaining electrical systems in good condition, handling flammable materials safely, and practicing safe smoking habits, can help prevent ordinary fires from occurring.</p>
+
+            <PieChartForOrdinary/>
 
             <div className={styles.buttons}>
                 <Redbutton>Take the quiz</Redbutton>
