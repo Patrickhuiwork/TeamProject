@@ -35,7 +35,9 @@ export default function LearningOrdinary() {
             <PieChartForOrdinary/>
 
             <div className={styles.buttons}>
-                <Redbutton>Take the quiz</Redbutton>
+                <Link href='/Quiz3'>
+                  <Redbutton>Take the quiz</Redbutton>
+                </Link>
                 <Link href='/learningElectric'><Learnbutton>Start again from Electrical Fires ⮞</Learnbutton></Link>
                 
             </div>

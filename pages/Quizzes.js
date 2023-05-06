@@ -17,7 +17,6 @@ export default function Quizzes() {
       <main className={styles.main}>
         <div className={styles.box}>
           <h1>Quizzes</h1>
-          <Image src='/icons/pagesIcon/quiz icon.svg' width='150' height='200' />
           <p className={styles.description}>Try one of our quizzes to asses your knowledge on different kinds of fires!</p>
           <div className={styles.threeoptions}>
               <div className={styles.quizcontainer}>

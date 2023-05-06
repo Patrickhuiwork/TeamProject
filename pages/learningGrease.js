@@ -35,7 +35,9 @@ export default function LearningGrease() {
             <PieChartForGrease/>
 
             <div className={styles.buttons}>
-                <Redbutton>Take the quiz</Redbutton>
+                <Link href='/Quiz2'>
+                  <Redbutton>Take the quiz</Redbutton>
+                </Link>
                 <Link href='/learningOrdinary'><Learnbutton>Continue to Ordinary Fire ⮞</Learnbutton></Link>
                 
             </div>
