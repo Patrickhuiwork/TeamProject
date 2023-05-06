@@ -16,7 +16,7 @@ export default function Quizzes() {
       </Head>
       <main className={styles.main}>
         <div className={styles.box}>
-          <h1>Quizzes</h1>
+          <h1 className={styles.title}>Quizzes</h1>
           <p className={styles.description}>Try one of our quizzes to asses your knowledge on different kinds of fires!</p>
           <div className={styles.threeoptions}>
               <div className={styles.quizcontainer}>
