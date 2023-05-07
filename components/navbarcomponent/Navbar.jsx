@@ -36,11 +36,18 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    if (isOpen) {
+      closeMenu();
+    }
   };
 
   const closeMenu = () => {
     setIsOpen(false);
   };
+
+  const handleNavItemClick = () => {
+    closeMenu();
+  }
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -73,11 +80,11 @@ const Navbar = () => {
           <div className={`nav__menu-bar-line ${isOpen ? 'open' : ''}`}></div>
         </div>
 
-        <div ref={menuRef} className={`nav__menu-list ${isOpen ? 'open' : ''}`}>
-          {MENU_LIST.map((menu, idx) => {
+        <div ref={menuRef} className={`nav__menu-list ${isOpen ? 'open' : ''}`} onClick={closeMenu}>
+          {MENU_LIST.map((menu) => {
             return (
-              <div key={menu.text}>
-                <NavItem {...menu} onClick={closeMenu} />
+              <div key={menu.title}>
+                <NavItem {...menu} onClick={handleNavItemClick} />
               </div>
             );
           })}
