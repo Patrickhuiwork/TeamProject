@@ -208,7 +208,7 @@ span {
 
 .nav__menu-list a:hover {
   color: #ff6f69;
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 
 .nav__menu-item {
@@ -221,7 +221,7 @@ span {
 
 .nav__menu-item:hover {
   color: #ff6f69;
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 
 .nav__menu-list a:visited {
