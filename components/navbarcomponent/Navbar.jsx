@@ -9,7 +9,7 @@ const MENU_LIST = [
     href: '/getstarted',
   },
   {
-    title: 'Learn More',
+    title: 'Learning',
     href: '/learning',
   },
   {

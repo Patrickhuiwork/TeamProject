@@ -153,7 +153,9 @@ span {
 }
 
 .nav__menu-list {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
   flex-direction: column;
   position: absolute;
   top: 100%;
@@ -162,10 +164,12 @@ span {
   padding: 1rem;
   background-color: var(--secondary-color);
   z-index: 1;
+  transition: all 0.3s ease;
 }
 
 .nav__menu-list.open {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
 .nav__menu-list>div {
@@ -213,6 +217,8 @@ span {
     margin-right: 2rem;
     width: auto;
     padding: 0;
+    opacity: 1;
+    visibility: visible;
   }
 
   .nav__menu-list>div {
@@ -230,6 +236,7 @@ span {
   .nav__menu-list a:hover {
     color: var(--nav-link);
   }
+
 
   .nav__menu-bar {
     display: none;

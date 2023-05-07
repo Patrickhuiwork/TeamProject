@@ -19,7 +19,7 @@ export default function Learning() {
       </Head>
       <main className={styles.main}>
         <div className={styles.box}>
-          <h1>Learn more</h1>
+          <h1>Learning</h1>
           <Image src='/icons/pagesIcon/learn more icon.svg' width='300' height='170' />
           <h2>Choose the folllowing types of fire below to learn more about</h2>
           <div className={styles.threeoptions}>

@@ -24,7 +24,7 @@ export default function Activites() {
           <div className={styles.container}>
             <Link href='/learning'><Squarebutton1>
               <div className={styles.boxCenter}>
-                Learn More
+                Learning
                 <Image src='/icons/pagesIcon/learn more icon.svg' width='150' height='100' />
               </div>
             </Squarebutton1></Link>

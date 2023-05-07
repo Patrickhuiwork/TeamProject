@@ -14,8 +14,8 @@
     text-decoration: none;
     margin-left: 1rem;
     margin-right: 1rem;
+    position: relative;
 }
-
 
 .illustration{
     width: 250px;
@@ -23,8 +23,12 @@
     object-fit: contain;
     text-decoration: none;
     margin-top: 1rem;
+    transition: transform 0.3s ease-in-out;
 }
 
+.quizcontainer:hover .illustration {
+    transform: translateY(-10px);
+}
 .description{
     text-align: center;
 }
