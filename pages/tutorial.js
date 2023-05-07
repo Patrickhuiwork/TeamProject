@@ -13,24 +13,27 @@ export default function Tutorial() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>Tutorial</h1>
-        <Image src='/icons/pagesIcon/tutorial icon.svg' width='150' height='150' />
-        <img src='https://d2uolguxr56s4e.cloudfront.net/img/kartrapages/video_player_placeholder.gif' width='350' height='230' />
+        <div className={styles.box}>
+          <h1>Tutorial</h1>
+          <Image src='/icons/pagesIcon/tutorial icon.svg' width='150' height='150' />
+          <img src='https://d2uolguxr56s4e.cloudfront.net/img/kartrapages/video_player_placeholder.gif' width='350' height='230' />
 
-        <ol className={styles.description}>
-          <li>
-            Press the button about the fire
-            in the field you want to know about.
-          </li>
-          <li>
-            Learn about various types of fire through
-            quizzes. If you choose the wrong option,
-            you will get feedback.
-          </li>
-        </ol>
+          <ol className={styles.description}>
+            <li>
+              Press the button about the fire
+              in the field you want to know about.
+            </li>
+            <li>
+              Learn about various types of fire through
+              quizzes. If you choose the wrong option,
+              you will get feedback.
+            </li>
+          </ol>
 
-        <h3>App Interface Overview</h3>
-        <Carousel/>
+          <h3>App Interface Overview</h3>
+          <Carousel/>
+
+        </div>
       </main>
     </>
   )

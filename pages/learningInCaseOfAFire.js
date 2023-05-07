@@ -16,28 +16,31 @@ export default function LearningInCaseOfAFire() {
             <Link href='/learning'><ReturnIcon /></Link>
             <main className={styles.main}>
                 <div className={styles.box}>
-                    <h1>Fire Action</h1>
-                    <h2>If you discover or suspect a fire</h2>
-                </div>
 
-                <div className={styles.box2}>
-                    <h1>1.</h1>
-                    <h2>Operate the nearest fire alarm call point</h2>
-                </div>
+                    <div className={styles.container}>
+                        <h1>Fire Action</h1>
+                        <h2>If you discover or suspect a fire</h2>
+                    </div>
 
-                <div className={styles.box3}>
-                    <h1>2.</h1>
-                    <h2>leave the building by the nearest available exit</h2>
-                </div>
+                    <div className={styles.box2}>
+                        <h1>1.</h1>
+                        <h2>Operate the nearest fire alarm call point</h2>
+                    </div>
 
-                <div className={styles.box3}>
-                    <h1>3.</h1>
-                    <h2>Report to person in charge of Assembly point</h2>
-                </div>
+                    <div className={styles.box3}>
+                        <h1>2.</h1>
+                        <h2>leave the building by the nearest available exit</h2>
+                    </div>
 
-                <div className={styles.box2}>
-                    <h1>4.</h1>
-                    <h2>Do not stop to collect personal belongings</h2>
+                    <div className={styles.box3}>
+                        <h1>3.</h1>
+                        <h2>Report to person in charge of Assembly point</h2>
+                    </div>
+
+                    <div className={styles.box2}>
+                        <h1>4.</h1>
+                        <h2>Do not stop to collect personal belongings</h2>
+                    </div>
                 </div>
             </main>
         </>

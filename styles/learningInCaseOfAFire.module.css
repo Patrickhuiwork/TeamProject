@@ -17,7 +17,7 @@
     margin-top: 30px;
 }
 
-.box {
+.container {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -66,9 +66,22 @@
     height: 200px;
   }
 
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background: linear-gradient(to bottom, var(--color-gradient1-start), var(--color-gradient1-end));
+    border-radius: 20px;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .5);;
+  }
+
   @media only screen and (max-width: 768px) {
 
-    .box {
+    .container{
         width: 450px;
     }
 
@@ -79,5 +92,7 @@
     .box3 {
         width: 450px;
     }
+
+    
 
   }

@@ -16,8 +16,26 @@
     margin: 40px 0;
 }
 
+.box {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background: linear-gradient(to bottom, var(--color-gradient1-start), var(--color-gradient1-end));
+    border-radius: 20px;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .5);
+    width: 450px;
+  }
+
 @media only screen and (max-width: 768px) {
     .description {
+        width: 300px;
+    }
+
+    .box {
         width: 300px;
     }
 }
