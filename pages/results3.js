@@ -49,7 +49,7 @@ export default function Results() {
             <Redbutton>Take Another Quiz</Redbutton>
           </Link>
         ) : (
-          <Link href='/learningElectric'>
+          <Link href='/ReviewOrdinary'>
             <Button>Review</Button>
           </Link>
         )}
