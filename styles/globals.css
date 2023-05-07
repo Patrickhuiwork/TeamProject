@@ -184,6 +184,18 @@ span {
   color: #ff6f69;
 }
 
+.nav__menu-item {
+  display: block;
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav__menu-item:hover {
+  color: #ff6f69;
+}
+
 .nav__menu-list a:visited {
   color: var(--primary-color);
   text-decoration: none;

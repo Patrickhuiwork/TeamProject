@@ -1,11 +1,10 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
 
-const NavItem = ({ title, href, active }) => {
+const NavItem = ({ title, href }) => {
   return (
-    <Link href={href} className={`nav__item ${active ? 'active' : ''}`}>
-      {title}
+    <Link href={href} passHref>
+      <legacyBehavior className="nav__menu-item">{title}</legacyBehavior>
     </Link>
   );
 };
