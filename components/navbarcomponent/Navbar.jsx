@@ -73,7 +73,7 @@ const Navbar = () => {
           <div className={`nav__menu-bar-line ${isOpen ? 'open' : ''}`}></div>
         </div>
 
-       <div ref={menuRef} className={`nav__menu-list ${isOpen ? 'open' : ''}`}>
+        <div ref={menuRef} className={`nav__menu-list ${isOpen ? 'open' : ''}`}>
           {MENU_LIST.map((menu, idx) => {
             return (
               <div key={menu.text}>
