@@ -4,8 +4,25 @@
   justify-content: center;
   width: 15rem;
   height: 15rem;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+  
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .box {
   display: flex;
   flex-direction: column;

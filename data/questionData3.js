@@ -27,7 +27,7 @@ export const questions = [
       questionoptions1: 'B: Rubber',
       options: ['A', 'B'],
       imageSrc: '/illustrations/rubber gas.svg',
-      answer: 'B',
+      answer: 'A',
       explanation: 'Gasoline is considered an ordinary combustible because it has a low ignition point and can easily catch fire with a spark or flame, while rubber is not because it is more resistant to ignition and requires a higher temperature or sustained heat source to ignite.'
     },
   ];
