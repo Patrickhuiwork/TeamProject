@@ -80,19 +80,9 @@
   }
 
   @media only screen and (max-width: 768px) {
-
-    .container{
-        width: 450px;
-    }
-
-    .box2 {
-        width: 450px;
-    }
-
-    .box3 {
-        width: 450px;
-    }
-
-    
+    .container, .box2, .box3 {
+        width: 330px;
+        padding: 0 1rem;
+    }    
 
   }

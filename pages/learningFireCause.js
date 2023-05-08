@@ -42,7 +42,7 @@ export default function LearningFireCause() {
 
                         <div className={styles.eachimg}>
                             <Image src='/imagery/fire-causes/kid-with-fire.jpg' width='150' height='90' />
-                            <p>children fire playing </p>
+                            <p>children playing with fire </p>
                         </div>
 
                         <div className={styles.eachimg}>
@@ -53,6 +53,7 @@ export default function LearningFireCause() {
 
                     <div>
                         <h3>Do you know?</h3>
+                        <h4>Different following reason causes fire the most</h4>
                         <div className={styles.chart}><PieChartForFireCause/></div>
                     </div>
                 </div>
