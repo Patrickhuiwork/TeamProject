@@ -5,6 +5,7 @@ import Link from 'next/link';
 import ResourcesButton from '@/components/ResourcesButton';
 import ResourcesButtonv2 from '@/components/ResourcesButtonv2';
 import { useState, useRef, useEffect } from 'react';
+import Map from '../components/Map'
 
 export default function Resources() {
   const [accordion1, setAccordion1] = useState(false);
@@ -63,8 +64,7 @@ export default function Resources() {
           <h1>Resources</h1>
           <Image src="/icons/pagesIcon/resources icon.svg" width="200" height="150" />
           <h3 className={styles.flex}>Vancouver fire and rescue services map</h3>
-          <Image src="/imagery/service-map.png" width="350" height="230" />
-          <h3>Fire emergency: 911</h3>
+          <Map/>
           <div className={styles.description}>
             <div className={styles.resourcescontainer} ref={accordionRef1}>
               <ResourcesButtonv2 onClick={toggleAccordion1}>
