@@ -1,9 +1,55 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '@/styles/resources.module.css'
-import Link from 'next/link'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '@/styles/resources.module.css';
+import Link from 'next/link';
+import ResourcesButton from '@/components/ResourcesButton';
+import ResourcesButtonv2 from '@/components/ResourcesButtonv2';
+import { useState, useRef, useEffect } from 'react';
 
 export default function Resources() {
+  const [accordion1, setAccordion1] = useState(false);
+  const [accordion2, setAccordion2] = useState(false);
+  const [accordion3, setAccordion3] = useState(false);
+  const accordionRef1 = useRef();
+  const accordionRef2 = useRef();
+  const accordionRef3 = useRef();
+
+  const toggleAccordion1 = () => setAccordion1(!accordion1);
+  const toggleAccordion2 = () => setAccordion2(!accordion2);
+  const toggleAccordion3 = () => setAccordion3(!accordion3);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        accordionRef1.current &&
+        !accordionRef1.current.contains(event.target) &&
+        accordion1
+      ) {
+        setAccordion1(false);
+      }
+      if (
+        accordionRef2.current &&
+        !accordionRef2.current.contains(event.target) &&
+        accordion2
+      ) {
+        setAccordion2(false);
+      }
+      if (
+        accordionRef3.current &&
+        !accordionRef3.current.contains(event.target) &&
+        accordion3
+      ) {
+        setAccordion3(false);
+      }
+    };
+  
+    document.addEventListener('mousedown', handleClickOutside);
+  
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [accordion1, accordion2, accordion3]);
+
   return (
     <>
       <Head>
@@ -14,42 +60,71 @@ export default function Resources() {
       </Head>
       <main className={styles.main}>
         <div className={styles.box}>
-
           <h1>Resources</h1>
-          <Image src='/icons/pagesIcon/resources icon.svg' width='200' height='150' />
+          <Image src="/icons/pagesIcon/resources icon.svg" width="200" height="150" />
           <h3 className={styles.flex}>Vancouver fire and rescue services map</h3>
-          <Image src='/imagery/service-map.png' width='350' height='230' />
+          <Image src="/imagery/service-map.png" width="350" height="230" />
           <h3>Fire emergency: 911</h3>
           <div className={styles.description}>
-            <div>
-              <h4><b>Vancouver Fire & Radius Security:</b></h4>
-              <ul>
-                <li><b>Phone: </b> 604.232.3473</li>
-                <li><b>Website: </b> <Link href = "https://www.vanfire.com/">https://www.vanfire.com/</Link></li>
-              </ul>
+            <div className={styles.resourcescontainer} ref={accordionRef1}>
+              <ResourcesButtonv2 onClick={toggleAccordion1}>
+                <h4>
+                  <b>Vancouver Fire & Radius Security:</b>
+                </h4>
+              </ResourcesButtonv2>
+              {accordion1 && (
+                <div className={styles.panel}>
+                  <p>
+                    <b>Phone: 604-232-3473</b>
+                  </p>
+                  <Link href="https://www.vanfire.com/">
+                    <ResourcesButton>
+                      <b>Website</b>
+                    </ResourcesButton>
+                  </Link>
+                </div>
+              )}
+            </div>
+            
+            <div className={styles.resourcescontainer} ref={accordionRef2}>
+              <ResourcesButtonv2 onClick={toggleAccordion2}>
+                <h4>
+                  <b>Fire Protection Association:</b>
+                </h4>
+              </ResourcesButtonv2>
+              {accordion2 && (
+                <div className={styles.panel}>
+                  <p>
+                    <b>Phone: 800-344-3555</b>
+                  </p>
+                  <Link href="https://www.nfpa.org/">
+                    <ResourcesButton>
+                      <b>Website</b>
+                    </ResourcesButton>
+                  </Link>
+                </div>
+              )}
             </div>
 
-            <div>
-              <h4><b>Fire Protection Association:</b></h4>
-              <ul>
-                <li><b>Phone: </b> 617.984.7275</li>
-                <li><b>Website: </b> <Link href = "https://www.nfpa.org/">https://www.nfpa.org/</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 ><b>Fire services, standards and reporting:</b> </h4>
-              <p className={styles.flex}><Link href = "https://www2.gov.bc.ca/gov/content/safety/emergency-management/fire-safety ">https://www2.gov.bc.ca/gov/content/safety/emergency-management/fire-safety </Link></p>
-            </div>
-
-            <div className={styles.flex}>
-              <Image src='/imagery/fire-fighter.jpg' width='150' height='90'/>
-              <Image src='/imagery/fire-truck.jpg' width='150' height='90'/>
+            <div className={styles.resourcescontainer} ref={accordionRef3}>
+              <ResourcesButtonv2 onClick={toggleAccordion3}>
+                <h4>
+                  <b>Fire services, standards and reporting:</b>
+                </h4>
+              </ResourcesButtonv2>
+              {accordion3 && (
+                <div className={styles.panel}>
+                  <Link href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/fire-safety ">
+                    <ResourcesButton>
+                      <b>Website</b>
+                    </ResourcesButton>
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         </div>
       </main>
     </>
-  )
+  );
 }
-

@@ -4,21 +4,26 @@
     justify-content: space-between;
     align-items: center;
     margin: 3rem;
-}
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+  }
 
-.description {
-    font-size: 18px;
-    text-align: center;
-}
-
-.flex {
+  
+  
+  .flex {
     display: flex;
     line-break: anywhere;
     gap: 5px;
     justify-content: center;
-}
-
-.box {
+  }
+  
+  .box {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -26,11 +31,26 @@
     border-radius: 20px;
     padding: 4rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, .5);
-    width: 500px;
+    width: 600px;
   }
+
+  .resourcescontainer {
+    margin-bottom: 1rem;
+  }
+  
+  .panel {
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background: var(--orange-hue1);
+    position: relative;
+    z-index: 1;
+  }
+
 
 @media only screen and (max-width: 768px) {
     .description {
