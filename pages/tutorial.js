@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/tutorial.module.css'
 import Carousel from '@/components/Carousel'
+import Link from 'next/link'
 
 export default function Tutorial() {
   return (
@@ -20,18 +21,28 @@ export default function Tutorial() {
 
           <ol className={styles.description}>
             <li>
-              Press the button about the fire
+              Navigate to the <Link href='/learning'><span> Learning Page </span></Link> and press the button about the fire
               in the field you want to know about.
             </li>
+
             <li>
-              Learn about various types of fire through
+              Navigate to the <Link href='/learning'><span> Quiz Page </span></Link> to learn about various types of fire through
               quizzes. If you choose the wrong option,
               you will get feedback.
             </li>
+
+            <li>
+              Navigate to the <Link href='/learning'><span> About Page </span></Link> to learn more about our team
+            </li>
+
+            <li>
+              Navigate to the <Link href='/learning'><span> Resources Page </span></Link> to find out more helpful page that can help you gain more knowledge about fire safety
+            </li>
+
           </ol>
 
           <h3>App Interface Overview</h3>
-          <Carousel/>
+          <Carousel />
 
         </div>
       </main>
