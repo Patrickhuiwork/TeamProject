@@ -113,7 +113,7 @@ export default function Resources() {
                 </h4>
               </ResourcesButtonv2>
               {accordion3 && (
-                <div className={styles.panel}>
+                <div className={styles.panel }>
                   <Link href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/fire-safety ">
                     <ResourcesButton>
                       <b>Website</b>
