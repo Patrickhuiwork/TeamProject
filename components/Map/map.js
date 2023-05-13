@@ -66,8 +66,8 @@ export default function Map() {
                         {index === 14 && "Vancouver Fire Hall No. 18 | Shaugnessy"}
                         {index === 15 && "Vancouver Fire Hall No. 19"}
                         {index === 16 && "Vancouver Fire Hall No. 20 | Victoria"}
-                        {index === 12 && "Vancouver Fire Hall No. 15 | Vancouver Fire Hall No. 21 - Kerrisdale"}
-                        {index === 12 && "Vancouver Fire Hall No. 22 - Marpole"}
+                        {index === 17 && "Vancouver Fire Hall No. 21 | Kerrisdale"}
+                        {index === 18 && "Vancouver Fire Hall No. 22 | Marpole"}
                     </Popup>
                 </Marker>
             ))}
