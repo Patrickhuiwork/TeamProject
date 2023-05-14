@@ -8,15 +8,34 @@ import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
 import PieChartForOrdinary from '@/components/pieChartForOrdinary'
 import Learnbutton from '@/components/Learnbutton'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react';
 
-import LearnmoreButtonv2 from '@/components/LearnmoreButtonv2'
+import LearnmoreButtonv2 from '@/components/LearnmoreButtonv2';
 
-export default function LearningOrdinary() {
-
+export default function LearningElectric() {
   const [accordion, setAccordion] = useState(false);
 
   const toggleAccordion = () => setAccordion(!accordion);
+
+  const accordionRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutsideAccordion = (event) => {
+      if (
+        accordionRef.current &&
+        !accordionRef.current.contains(event.target) &&
+        accordion
+      ) {
+        toggleAccordion();
+      }
+    };
+
+    document.addEventListener('click', handleClickOutsideAccordion);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutsideAccordion);
+    };
+  }, [accordionRef, accordion]);
 
 
 
@@ -40,7 +59,7 @@ export default function LearningOrdinary() {
 
             <PieChartForOrdinary/>
 
-            <div className={styles.resourcescontainer}>
+            <div className={styles.resourcescontainer} ref={accordionRef}>
               <LearnmoreButtonv2 onClick={toggleAccordion}>
                 What to Do In Case of a Ordinary Fire 
               </LearnmoreButtonv2>

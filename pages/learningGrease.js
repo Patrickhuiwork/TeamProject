@@ -8,15 +8,34 @@ import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
 import PieChartForGrease from '@/components/pieChartForGrease'
 import Learnbutton from '@/components/Learnbutton'
-import LearnmoreButtonv2 from '@/components/LearnmoreButtonv2'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react';
 
-export default function LearningGrease() {
+import LearnmoreButtonv2 from '@/components/LearnmoreButtonv2';
 
-  
+export default function LearningElectric() {
   const [accordion, setAccordion] = useState(false);
 
   const toggleAccordion = () => setAccordion(!accordion);
+
+  const accordionRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutsideAccordion = (event) => {
+      if (
+        accordionRef.current &&
+        !accordionRef.current.contains(event.target) &&
+        accordion
+      ) {
+        toggleAccordion();
+      }
+    };
+
+    document.addEventListener('click', handleClickOutsideAccordion);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutsideAccordion);
+    };
+  }, [accordionRef, accordion]);
 
     return (
       <>
@@ -41,7 +60,7 @@ export default function LearningGrease() {
 
             <PieChartForGrease/>
 
-            <div className={styles.resourcescontainer}>
+            <div className={styles.resourcescontainer} ref={accordionRef}>
               <LearnmoreButtonv2 onClick={toggleAccordion}>
                 What to Do In Case of a Grease Fire
               </LearnmoreButtonv2>
