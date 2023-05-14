@@ -8,8 +8,18 @@ import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
 import PieChartForOrdinary from '@/components/pieChartForOrdinary'
 import Learnbutton from '@/components/Learnbutton'
+import { useState } from 'react'
+
+import LearnmoreButtonv2 from '@/components/LearnmoreButtonv2'
 
 export default function LearningOrdinary() {
+
+  const [accordion, setAccordion] = useState(false);
+
+  const toggleAccordion = () => setAccordion(!accordion);
+
+
+
     return (
       <>
         <Head>
@@ -25,20 +35,42 @@ export default function LearningOrdinary() {
         <main className={styles.main}>   
         <div className={styles.box}>           
             <h1>Learn about Ordinary Fire</h1>
-            <img src='/illustrations/ordinary fire.svg' className={styles.illustration} />   
-            <p className={styles.description}>An ordinary fire refers to a standard fire that occurs when a combustible material, such as wood, paper, fabric, or other flammable substances, comes into contact with a heat source and reaches its ignition point. </p>
-            <p className={styles.description}>Basically, ordinary fire occur from fire place and any kitchen facilities.</p>
-            <Image src='/imagery/fire-causes/kid-with-fire.jpg' width='350' height='200'/>
-            <p className={styles.description}>Ordinary fires can typically be extinguished using appropriate fire extinguishing methods, such as water, fire extinguishers, fire blankets, or other extinguishing agents, depending on the type of fuel and the size and location of the fire. The appropriate fire extinguishing method should be chosen based on the type of fire to avoid making the situation worse.</p>            
-            <p className={styles.description2}>Proper fire prevention measures, such as using caution with open flames, maintaining electrical systems in good condition, handling flammable materials safely, and practicing safe smoking habits, can help prevent ordinary fires from occurring.</p>
+            <img src='/illustrations/ordinary fire.svg' className={styles.illustration} />
+            <p>An ordinary fire, also known as a Class A fire, is a fire that involves ordinary combustibles such as wood, paper, or cloth. These types of fires typically occur in homes, offices, and other structures and can be caused by a variety of factors such as faulty wiring, smoking materials, and cooking equipment. Class A fires can usually be extinguished with water or a fire extinguisher that is rated for Class A fires. It is important to take precautions to prevent these types of fires and to have an emergency plan in place in case of a fire emergency.</p>   
 
             <PieChartForOrdinary/>
 
+            <div className={styles.resourcescontainer}>
+              <LearnmoreButtonv2 onClick={toggleAccordion}>
+                What to Do In Case of a Ordinary Fire 
+              </LearnmoreButtonv2>
+              {accordion && (
+                <div className={styles.panel}>
+                  <ol>
+                    <li>Use water: If the fire is small and contained to a specific area, you can try to put it out by using water. Use a bucket or a hose to spray water directly onto the flames, making sure to stand at a safe distance.</li>
+                    <li>
+                    Smother the fire: If water is not effective or not available, try smothering the fire with a fire blanket or any other non-flammable material.
+                    </li>
+                    <li>
+                    Use a fire extinguisher: If the fire is still not out, use a Class A fire extinguisher to put out the flames. Aim the extinguisher at the base of the fire and sweep back and forth until the fire is completely extinguished.
+                    </li>
+                    <li>
+                    Evacuate the building and call the fire department: If the fire is too large or the flames cannot be extinguished quickly, evacuate the building immediately and call the fire department.
+                    </li>
+                  </ol>
+                 
+                </div>
+              )}
+            </div>
+
+            <p>
+            Remember, moisture content is the primary factor in how fast something burns, as water's high heat capacity absorbs energy and prevents ignition, and decreasing moisture content makes material more susceptible to heat and quicker to burn. Taking precautions such as proper storage of flammable materials and regular maintenance of smoke detectors greatly reduces the risk of a Class A fire starting in the first place. Additionally, make sure to properly educate yourself and others on the proper use of fire extinguishers and when to call for professional help.
+            </p>
             <div className={styles.buttons}>
                 <Link href='/Quiz3'>
                   <Redbutton>Take the quiz</Redbutton>
                 </Link>
-                <Link href='/learningElectric'><Learnbutton>Start again from Electrical Fires ⮞</Learnbutton></Link>
+                <Link href='/learningElectric'><Learnbutton>Continue to Electrical Fires ⮞</Learnbutton></Link>
                 
             </div>
 

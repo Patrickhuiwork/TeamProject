@@ -22,12 +22,12 @@ export const questions = [
     },
     {
       id: 3,
-      question: 'Which of the following is considered a ordinary combustible',
-      questionoptions: 'A: Gasoline',
-      questionoptions1: 'B: Rubber',
+      question: 'Which of the following is a common factor that contributes to the ignition and spread of ordinary fires?',
+      questionoptions: 'A: Low oxygen levels',
+      questionoptions1: 'B: Low wind speeds',
       options: ['A', 'B'],
       imageSrc: '/illustrations/rubber gas.svg',
       answer: 'A',
-      explanation: 'Gasoline is considered an ordinary combustible because it has a low ignition point and can easily catch fire with a spark or flame, while rubber is not because it is more resistant to ignition and requires a higher temperature or sustained heat source to ignite.'
+      explanation: 'Oxygen is a crucial element in the process of combustion, which is the chemical reaction that occurs when a fuel source reacts with oxygen and produces heat and light.When the oxygen level is low, the fire may burn less intensely or even go out, but when the oxygen level is high, it can cause the fire to spread more rapidly.  '
     },
   ];

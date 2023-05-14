@@ -59,8 +59,13 @@ export default function AreaChart() {
 
     return (
         <>
-            <div className={styles.container}>
-                <Pie data={chartData} options={chartOptions}/>
+             
+            <div className={styles.chartcontainer}>
+                <h2>Common Causes of Grease Fires</h2>
+                <div className={styles.container}>
+                    <Pie data={chartData} options={chartOptions}/>
+                </div>
+
             </div>
         </>
     )

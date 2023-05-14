@@ -35,6 +35,8 @@ export default function LearningElectric() {
             <img src='/illustrations/electric fire.svg' className={styles.illustration} /> 
             <p>An electrical fire is a type of fire that is caused by an electrical fault or malfunction. Electrical fires can occur when electrical wiring, appliances, or equipment become overheated or overloaded and generate heat that ignites surrounding materials, such as flammable insulation or combustible objects. Common causes of electrical fires include faulty wiring, overloaded circuits, damaged electrical cords or plugs, and improper use of electrical equipment. Electrical fires can be very dangerous and can spread quickly, so it's important to take precautions to prevent them from occurring and to know how to respond in case of an emergency. </p>
 
+            <p> Do not use water: Never use water to put out an electrical fire, as water can conduct electricity and spread the flames. Instead, use a fire extinguisher or another non-conductive substance, such as baking soda or sand, to smother the fire. </p>
+
             <PieChartForElectric/>
 
       
@@ -48,9 +50,6 @@ export default function LearningElectric() {
                     <li>Turn off the power source: The first and most important step in dealing with an electrical fire is to turn off the power source to eliminate the source of the fire. This will help prevent the fire from spreading and minimize the risk of electrocution.</li>
                     <li>
                     Use a fire extinguisher: Once you have turned off the power source, you can try to put out the flames with a fire extinguisher. It's important to use a fire extinguisher that is rated for electrical fires, as this type of extinguisher will not conduct electricity and can safely put out the fire. 
-                    </li>
-                    <li>
-                    Do not use water: Never use water to put out an electrical fire, as water can conduct electricity and spread the flames. Instead, use a fire extinguisher or another non-conductive substance, such as baking soda or sand, to smother the fire. 
                     </li>
                     <li>
                     Evacuate the building and call the fire department: If the fire is too large or the flames cannot be extinguished quickly, evacuate the building immediately and call the fire department.
