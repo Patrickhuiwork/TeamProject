@@ -11,13 +11,16 @@ export default function Resources() {
   const [accordion1, setAccordion1] = useState(false);
   const [accordion2, setAccordion2] = useState(false);
   const [accordion3, setAccordion3] = useState(false);
+  const [accordion4, setAccordion4] = useState(false);
   const accordionRef1 = useRef();
   const accordionRef2 = useRef();
   const accordionRef3 = useRef();
+  const accordionRef4 = useRef();
 
   const toggleAccordion1 = () => setAccordion1(!accordion1);
   const toggleAccordion2 = () => setAccordion2(!accordion2);
   const toggleAccordion3 = () => setAccordion3(!accordion3);
+  const toggleAccordion4 = () => setAccordion4(!accordion4);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -42,6 +45,13 @@ export default function Resources() {
       ) {
         setAccordion3(false);
       }
+      if (
+        accordionRef4.current &&
+        !accordionRef4.current.contains(event.target) &&
+        accordion4
+      ) {
+        setAccordion4(false);
+      }
     };
   
     document.addEventListener('mousedown', handleClickOutside);
@@ -49,7 +59,7 @@ export default function Resources() {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [accordion1, accordion2, accordion3]);
+  }, [accordion1, accordion2, accordion3, accordion4]);
 
   return (
     <>
@@ -113,10 +123,40 @@ export default function Resources() {
             <div className={styles.resourcescontainer} ref={accordionRef3}>
               <ResourcesButtonv2 onClick={toggleAccordion3}>
                 <h4>
-                  <b>Fire services, standards and reporting:</b>
+                  <b>BC Wild Fire Services</b>
                 </h4>
               </ResourcesButtonv2>
               {accordion3 && (
+                <div className={styles.panel}>
+                  <h4></h4>
+                  <p className={styles.paragraph}>
+                    
+                  The BC Wildfire Service manages wildfires in British Columbia. They employ personnel to detect and respond to around 1,600 wildfires per year. The organization is divided into six regional fire centers with fire zones. Employment and contract opportunities are available. The website provides governance information, wildfire history summaries, statistics, geospatial data, and a glossary of terms.</p>
+                  <p>
+                  <b>Report a wildfire: 1-800-663-5555 or *5555 on a cell</b>
+                  </p>
+                  <p>
+                  <b>Fire information line: 1-888-336-7378</b>
+                  </p>
+                  <p>
+                  <b>Burn registration line: 1-888-797-1717</b>
+                  </p>
+                  <Link href="https://www2.gov.bc.ca/gov/content/safety/wildfire-status">
+                    <ResourcesButton>
+                      <b>Website</b>
+                    </ResourcesButton>
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            <div className={styles.resourcescontainer} ref={accordionRef4}>
+              <ResourcesButtonv2 onClick={toggleAccordion4}>
+                <h4>
+                  <b>Fire services, standards and reporting:</b>
+                </h4>
+              </ResourcesButtonv2>
+              {accordion4 && (
                 <div className={styles.panel }>
                   <p>The Office of the Fire Commissioner (OFC) provides:</p>
                   <ul>
@@ -134,6 +174,7 @@ export default function Resources() {
                 </div>
               )}
             </div>
+            
           </div>
         </div>
       </main>
