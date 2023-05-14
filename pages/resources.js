@@ -69,15 +69,16 @@ export default function Resources() {
             <div className={styles.resourcescontainer} ref={accordionRef1}>
               <ResourcesButtonv2 onClick={toggleAccordion1}>
                 <h4>
-                  <b>Vancouver Fire & Radius Security:</b>
+                  <b>Fire Information for Resource Managamenent System US/Canada</b>
                 </h4>
               </ResourcesButtonv2>
               {accordion1 && (
                 <div className={styles.panel}>
-                  <p>
-                    <b>Phone: 604-232-3473</b>
+                  <p className={styles.paragraph}>
+                 
+                    The information provided on the FIRMS webpage, including the US/Canada section, is gathered from various satellite and ground-based sources and updated every few hours. Overall, the FIRMS webpage is an essential tool for anyone interested in staying informed about fire activity and its management.
                   </p>
-                  <Link href="https://www.vanfire.com/">
+                  <Link href="https://firms.modaps.eosdis.nasa.gov/usfs/map/#d:2023-05-13..2023-05-14,2023-05-13;l:landsat,noaa20-viirs,viirs,modis_a,modis_t,active-usa,fire-perimeter;@-107.9,49.3,5z">
                     <ResourcesButton>
                       <b>Website</b>
                     </ResourcesButton>
@@ -89,15 +90,18 @@ export default function Resources() {
             <div className={styles.resourcescontainer} ref={accordionRef2}>
               <ResourcesButtonv2 onClick={toggleAccordion2}>
                 <h4>
-                  <b>Fire Protection Association:</b>
+                  <b>Canadian Interagency Forest Fire Centre</b>
                 </h4>
               </ResourcesButtonv2>
               {accordion2 && (
                 <div className={styles.panel}>
+                  <h4></h4>
+                  <p className={styles.paragraph}>
+                    The CIFFC coordinates resource sharing, mutual aid, and information among federal, provincial, and territorial wildland fire management agencies. It also facilitates national and international cooperation in fire management planning, program delivery, and human resource strategies.</p>
                   <p>
-                    <b>Phone: 800-344-3555</b>
+                    <b>Phone: 204-784-2030</b>
                   </p>
-                  <Link href="https://www.nfpa.org/">
+                  <Link href="https://www.ciffc.ca/">
                     <ResourcesButton>
                       <b>Website</b>
                     </ResourcesButton>
@@ -114,6 +118,14 @@ export default function Resources() {
               </ResourcesButtonv2>
               {accordion3 && (
                 <div className={styles.panel }>
+                  <p>The Office of the Fire Commissioner (OFC) provides:</p>
+                  <ul>
+                    <li>Applicable legislation and codes</li>
+                    <li>Firefighter standards and training</li>
+                    <li>Fire incident reporting</li>
+                    <li>Local Assistant to the Fire Commissioner (LAFC)</li>
+                    <li>Fire service awards</li>
+                  </ul>
                   <Link href="https://www2.gov.bc.ca/gov/content/safety/emergency-management/fire-safety ">
                     <ResourcesButton>
                       <b>Website</b>

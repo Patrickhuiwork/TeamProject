@@ -105,6 +105,11 @@ a {
   font-weight: 300;
 }
 
+li {
+  text-align: left;
+  margin-top: 10px;
+}
+
 span {
   color: var(--red-hue2);
 }
