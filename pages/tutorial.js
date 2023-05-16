@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/tutorial.module.css'
 import Carousel from '@/components/Carousel'
 import Link from 'next/link'
+import Video from '@/components/VideoPlayer'
 
 export default function Tutorial() {
   return (
@@ -17,7 +18,7 @@ export default function Tutorial() {
         <div className={styles.box}>
           <h1>Tutorial</h1>
           <Image src='/icons/pagesIcon/tutorial icon.svg' width='150' height='150' />
-          <img src='https://d2uolguxr56s4e.cloudfront.net/img/kartrapages/video_player_placeholder.gif' width='350' height='230' />
+          <Video/>
 
           <ol className={styles.description}>
             <li>
