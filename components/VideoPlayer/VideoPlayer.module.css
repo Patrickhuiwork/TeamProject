@@ -1,0 +1,14 @@
+.video-player {
+    width: 100%;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .controls button {
+    margin: 0 5px;
+  }
+  
