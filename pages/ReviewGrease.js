@@ -8,8 +8,35 @@ import Button from '@/components/Button'
 import Redbutton from '@/components/Redbutton'
 import PieChartForGrease from '@/components/pieChartForGrease'
 import Learnbutton from '@/components/Learnbutton'
+import { useState, useEffect, useRef } from 'react';
 
-export default function LearningGrease() {
+import LearnmoreButtonv2 from '@/components/LearnmoreButtonv2';
+
+export default function LearningElectric() {
+  const [accordion, setAccordion] = useState(false);
+
+  const toggleAccordion = () => setAccordion(!accordion);
+
+  const accordionRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutsideAccordion = (event) => {
+      if (
+        accordionRef.current &&
+        !accordionRef.current.contains(event.target) &&
+        accordion
+      ) {
+        toggleAccordion();
+      }
+    };
+
+    document.addEventListener('click', handleClickOutsideAccordion);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutsideAccordion);
+    };
+  }, [accordionRef, accordion]);
+
     return (
       <>
         <Head>
@@ -25,14 +52,39 @@ export default function LearningGrease() {
         <main className={styles.main}>   
         <div className={styles.box}>            
             <h1>Learn about Grease Fire</h1>
-            <img src='/illustrations/grease fire.svg' className={styles.illustration} />   
-            <p className={styles.description}>A grease fire is a type of fire that occurs when cooking oil or grease reaches its ignition point and catches fire. Grease fires are common in kitchens and can be dangerous if not handled properly</p>
-            <p className={styles.description}>The main reason for grease fires can be attributed to overheating of cooking oil or grease, which can reach its ignition point and catch fire.</p>
-            <Image src='/imagery/fire-causes/cooking-fire.png' width='350' height='200'/>
-            <p className={styles.description}>They can be prevented by being vigilant while cooking, using appropriate heat levels, and knowing how to properly extinguish them with a fire extinguisher or by smothering the flames. Prioritizing kitchen safety and having a plan in place to handle grease fires is essential.</p>            
-            <p className={styles.description2}>To prevent grease fires, it's important to always keep an eye on cooking oil or grease when it's heated and never leave it unattended. Adjusting the heat to the appropriate level and using a thermometer to monitor the oil's temperature can also help prevent overheating. Keeping a fire extinguisher and a lid nearby when cooking with oil or grease is also a good safety precaution.</p>
+            <img src='/illustrations/grease fire.svg' className={styles.illustration} />  
+            <p>A grease fire is a type of fire that occurs when oil or grease, often used for cooking, overheats and catches fire. Grease fires can spread quickly and are extremely dangerous, as they can easily ignite nearby flammable materials and cause extensive damage. They can also cause severe burns and injuries if not handled properly. It is important to take precautions to prevent grease fires and know how to safely extinguish them if they do occur. </p>
+
+            <p>Do not use water: Never use water to put out a grease fire, as water can cause the fire to spread and make the situation worse.</p> 
+           
 
             <PieChartForGrease/>
+
+            <div className={styles.resourcescontainer} ref={accordionRef}>
+              <LearnmoreButtonv2 onClick={toggleAccordion}>
+                What to Do In Case of a Grease Fire
+              </LearnmoreButtonv2>
+              {accordion && (
+                <div className={styles.panel}>
+                  <ol>
+                    <li>Turn off the heat source: The first step in dealing with a grease fire is to turn off the heat source to eliminate the source of the fire. This will help prevent the fire from spreading and minimize the risk of injury.</li>
+                    <li>
+                    Cover the pan with a lid or baking sheet: If the fire is small and contained to the pan, try covering the pan with a lid or baking sheet to smother the flames. Do not use a glass lid, as it may shatter due to the heat.
+                    </li>
+                    <li>
+                    Use baking soda or a Class K fire extinguisher: Class K fire extinguishers contain a special extinguishing agent that is effective in smothering fires fueled by cooking oils and fats, and can cool down the high temperatures associated with grease fires to prevent re-ignition. Alternatively, Baking soda is better than water for extinguishing grease fires, as water can cause the fire to spread. Baking soda releases carbon dioxide that smothers the fire
+                    </li>
+                    <li>
+                    Evacuate the building and call the fire department: If the fire is too large or the flames cannot be extinguished quickly, evacuate the building immediately and call the fire department.
+                    </li>
+                  </ol>
+                 
+                </div>
+              )}
+            </div>
+
+            <p>Remember, regularly cleaning the hood and stove to remove buildup greatly reduces the risk of a grease fire starting in the first place. In addition, it's important to have a Class K fire extinguisher on hand in your kitchen to quickly and safely extinguish a grease fire.</p>
+
 
             <div className={styles.buttons}>
                 <Link href='/Quiz2'>
