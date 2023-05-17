@@ -19,11 +19,11 @@ const VideoPlayer = ({ src }) => {
   };
 
   const forwardVideo = () => {
-    videoRef.current.currentTime += 10;
+    videoRef.current.currentTime += 5;
   };
 
   const rewindVideo = () => {
-    videoRef.current.currentTime -= 10;
+    videoRef.current.currentTime -= 5;
   };
 
   return (
