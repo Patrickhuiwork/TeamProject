@@ -1,6 +1,5 @@
-// VideoPlayer.js
-
 import { useRef } from 'react';
+import VideoButton from '../VideoButton';
 import styles from './VideoPlayer.module.css'; 
 
 const VideoPlayer = ({ src }) => {
@@ -33,11 +32,11 @@ const VideoPlayer = ({ src }) => {
         <source src='/video/final.mp4' type="video/mp4" />
       </video>
       <div className={styles.controls}>
-        <button onClick={playVideo}>Play</button>
-        <button onClick={pauseVideo}>Pause</button>
-        <button onClick={stopVideo}>Stop</button>
-        <button onClick={forwardVideo}>Forward</button>
-        <button onClick={rewindVideo}>Rewind</button>
+        <VideoButton onClick={playVideo}>Play</VideoButton>
+        <VideoButton onClick={pauseVideo}>Pause</VideoButton>
+        <VideoButton onClick={stopVideo}>Stop</VideoButton>
+        <VideoButton onClick={forwardVideo}>Forward</VideoButton>
+        <VideoButton onClick={rewindVideo}>Rewind</VideoButton>
       </div>
     </div>
   );
